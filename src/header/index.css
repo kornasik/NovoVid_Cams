@@ -1,0 +1,107 @@
+body {margin: 0;padding: 0;font-family: sans-serif;}
+
+.header{
+    background-color: #1e1323;
+    height: 100px;
+    border-bottom: 1px solid white;
+}
+
+.header-logo{
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.header-title{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-logo-name{
+    text-align: center;
+    margin: 5px auto 5px auto;
+    color: aqua;
+    font-size: 14px;
+
+}
+
+.header-title-info{
+    display: flex;
+    margin: auto 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-title-info-right{
+    margin: 0 40px 0 40px;
+}
+
+.header-title-nav__bar a{
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    cursor: pointer;
+    margin-top: 16%;
+}
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    border: 1px solid aqua;
+}
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    transition: 0.5s;
+}
+ul li a:hover {
+    color: #fff;
+}
+ul li a:hover::before {
+    animation: animate .5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        top: calc(50% - 2px);
+        left: -100%;
+        height: 4px;
+        z-index: 1;
+    }
+    50% {
+        top: calc(50% - 2px);
+        left: 0;
+        height: 4px;
+        z-index: 1;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+    }
+}

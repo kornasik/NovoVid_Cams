@@ -1,0 +1,11 @@
+.catalog-section-block-left-item{
+    margin: 20px 5px 20px 5px;
+    border-bottom: 1px solid #282c34;
+    padding-bottom: 10px;
+}
+
+.catalog-section-block-left a{
+    text-decoration: none;
+    color: #846c84;
+    font-size: 14px;
+}

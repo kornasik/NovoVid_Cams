@@ -1,0 +1,20 @@
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.catalog-container a {
+    width: 30%;
+    text-decoration: none;
+    color: gray;
+}
+
+.catalog-item-img {
+    display: block;
+    margin: 70px auto 0 auto;
+}
+
+.catalog-item-label {
+    text-align: center;
+}
