@@ -6,6 +6,16 @@ export const itemMenu = [{
     route: '/catalog'
 }];
 
+export const headerInformation = {
+    title: 'Cистемы видеонаблюдения',
+    tel: '+375 (29) 166-12-21',
+    mail: 'info@novovoid.by',
+    address: 'г.Минск, ул. Киселева 55',
+    vk: 'https://vk.com/novovid',
+    inst: '@novovid.by',
+    url: 'novovid.by'
+    };
+
 export const itemServices = [{
     label: 'Бесплатный выезд менеджера',
     img: 'manager'

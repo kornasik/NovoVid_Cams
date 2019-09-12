@@ -10,7 +10,6 @@
 }
 
 .wrapper-home {
-    background-image: url("../img/tech.jpg");
     background-size: cover;
     height: 300px;
 }
@@ -24,7 +23,8 @@
 .services-title {
     text-align: center;
     margin-bottom: 65px;
-    margin-top: 65px;
+    font-size: 27px;
+    letter-spacing: 14px;
 }
 
 .services-item {
@@ -84,7 +84,9 @@
 
 .reviews-block-title{
     text-align: center;
-    margin-top: 70px;
+    margin-bottom: 65px;
+    font-size: 27px;
+    letter-spacing: 14px;
 }
 
 .catalog-home-item-img{
@@ -94,4 +96,9 @@
 
 .catalog-home-title{
     text-align: center;
+}
+
+.services-item-down{
+    justify-content: space-evenly;
+    margin-bottom: 40px;
 }

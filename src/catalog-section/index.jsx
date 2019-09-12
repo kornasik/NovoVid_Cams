@@ -46,6 +46,9 @@ export default class CatalogSection extends Component {
                     {this.sectionBlock()}
                 </div>
                 <div className="catalog-section-block">
+                    <Link to="/" style={{position: 'absolute'}}>
+                        Главная
+                    </Link>
                     <div className="catalog-section-block-left">
                         <div className="catalog-section-block-left-title">
                             Каталог

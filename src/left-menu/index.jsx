@@ -1,6 +1,6 @@
+import React from "react";
 import {catalog} from "../dictionary/catalog";
 import {Link} from "react-router-dom";
-import React from "react";
 
 import './index.css';
 

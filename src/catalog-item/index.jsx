@@ -4,6 +4,7 @@ import {catalogSections} from "../dictionary/catalog";
 
 import './index.css';
 import '../left-menu/index.css';
+import {Link} from "react-router-dom";
 
 export default class CatalogItem extends Component {
     catalogItemTitle = () => {
@@ -60,6 +61,9 @@ export default class CatalogItem extends Component {
         return (
             <div className="container">
                 <div className="catalog-item-block">
+                    <Link to="/" style={{position: 'absolute'}}>
+                        Главная
+                    </Link>
                     <div className="catalog-section-block-left">
                         <div className="catalog-section-block-left-title">
                             Каталог
