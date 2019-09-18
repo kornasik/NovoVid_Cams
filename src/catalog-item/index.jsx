@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {LeftMenu} from "../left-menu";
 import {catalogSections} from "../dictionary/catalog";
+import {Link} from "react-router-dom";
+import {Price} from "../elements/price";
 
 import './index.css';
 import '../left-menu/index.css';
-import {Link} from "react-router-dom";
+
 
 export default class CatalogItem extends Component {
     catalogItemTitle = () => {
@@ -46,12 +48,13 @@ export default class CatalogItem extends Component {
             if (item.categoryName === this.props.match.params.id && splitItemLabel === this.props.match.params.name) {
                 const table = item.nameSpecification.concat(item.specification);
                 return item.nameSpecification.map((item1, index) => {
-                        return (
-                            <div className="catalog-item-block-specification">
-                                <div className="catalog-item-block-specification-name">{item1}</div>
-                                <div className="catalog-item-block-specification-value">{table[index + item.nameSpecification.length]}</div>
-                            </div>
-                        )
+                    return (
+                        <div className="catalog-item-block-specification">
+                            <div className="catalog-item-block-specification-name">{item1}</div>
+                            <div
+                                className="catalog-item-block-specification-value">{table[index + item.nameSpecification.length]}</div>
+                        </div>
+                    )
                 })
             }
         })
@@ -69,7 +72,7 @@ export default class CatalogItem extends Component {
                             Каталог
                         </div>
                         <LeftMenu
-                        props={this.props}
+                            props={this.props}
                         />
                     </div>
                     <div className="catalog-item-block-right">
@@ -83,6 +86,9 @@ export default class CatalogItem extends Component {
                             <ul className="catalog-item-description">
                                 <div className="catalog-item-description-title">Описание</div>
                                 {this.catalogItemDescription()}
+                                <Price
+                                    props={this.props}
+                                />
                             </ul>
                         </div>
                         <div className="catalog-item-specification">

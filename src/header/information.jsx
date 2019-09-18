@@ -1,59 +1,54 @@
 import React, {Fragment} from 'react';
-import {headerInformation} from "../dictionary";
 import phone from '../img/phone.png';
+import clock from '../img/clock.png'
 import mail from '../img/mail.png';
-import address from '../img/address.png';
-import vk from '../img/vk.png';
-import telegram from '../img/telegram.png';
-import inst from '../img/inst.png';
 
 import './index.css';
 
 export const Information = () => {
     const info = () => {
         return (
-            <div className="information-title">
-                {headerInformation.title.toUpperCase()}
-                <div className="information-contacts">
-                    <div className="information-up-line">
-                        <div className="information-item-wrapper">
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={vk}/></div>
-                                {headerInformation.vk}
-                            </div>
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={phone}/></div>
-                                {headerInformation.tel}
-                            </div>
-                        </div>
-                        <div className="information-item-wrapper">
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={mail}/></div>
-                                {headerInformation.mail}
-                            </div>
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={telegram}/></div>
-                                {headerInformation.inst}
-                            </div>
-                        </div>
-                        <div className="information-item-wrapper">
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={address}/></div>
-                                {headerInformation.address}
-                            </div>
-                            <div className="information-item">
-                                <div className="information-item-img"><img src={inst}/></div>
-                                {headerInformation.url}
-                            </div>
-                        </div>
+            <Fragment>
+                <div className="header-item">
+                    <img className="header-item-icon" src={phone} />
+                    <div className="header-item-wrapper">
+                        <div className="header-item-title">ПОЗВОНИТЕ НАМ</div>
+                        <div className="header-item-description">+375291661221</div>
+                    </div>
+
+                </div>
+                <div className="header-item">
+                    <img className="header-item-icon" src={clock} />
+                    <div className="header-item-wrapper">
+                        <div className="header-item-title">РЕЖИМ РАБОТЫ</div>
+                        <div className="header-item-description">Пн-Сб: 09.30 - 19.00</div>
                     </div>
                 </div>
+                <div className="header-item">
+                    <img className="header-item-icon" src={mail} />
+                    <div className="header-item-wrapper">
+                        <div className="header-item-title">НАША ПОЧТА</div>
+                        <div className="header-item-description">info@novovid.by</div>
+                    </div>
+                </div>
+            </Fragment>
+        )
+    };
+
+    const social = () => {
+        return (
+            <div className="social-block">
+                <div className="social social-telegram" />
+                <div className="social social-instagram" />
+                <div className="social social-vk" />
             </div>
         )
     };
+
     return (
         <Fragment>
             {info()}
+            {social()}
         </Fragment>
     )
 };

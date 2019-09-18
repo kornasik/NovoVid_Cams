@@ -25,11 +25,15 @@ export const catalog = [{
 }];
 
 export const catalogHome = [{
-    label: 'AHD камеры',
+    label: 'AHD камеры от 52 рублей.',
     img: 'https://proto-x.net/upload/iblock/703/ahd-cam.png',
     link: 'ahd-cams'
 }, {
-    label: 'IP Камеры',
+    label: 'Видеорегистраторы от 120 рублей',
+    img: 'https://proto-x.net/upload/iblock/7a8/ahd-registrators.png',
+    link: 'ahd-videoreg'
+}, {
+    label: 'IP камеры от 80 рублей',
     img: 'https://proto-x.net/upload/iblock/1cf/ip.png',
     link: 'ip-cams'
 }, {
@@ -42,6 +46,7 @@ export const catalogSections = [
         {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10D-SN13V212IR',
+            price: '2954',
             img: 'https://proto-x.net/upload/iblock/4eb/10d_ir-with-flag.png',
             description:
                 [
@@ -60,6 +65,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10D-SN20F36IR',
+            price: '2992',
             img: 'https://proto-x.net/upload/iblock/25e/10d_ir-with-flag.png',
             description:
                 [
@@ -78,6 +84,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10D-PE20F36IR',
+            price: '3583',
             img: 'https://proto-x.net/upload/iblock/25e/10d_ir-with-flag.png',
             description:
                 [
@@ -96,6 +103,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10D-PE20V212IR',
+            price: '4222',
             img: 'https://proto-x.net/upload/iblock/25e/10d_ir-with-flag.png',
             description:
                 [
@@ -114,6 +122,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10D-PE20M212IR',
+            price: '5302',
             img: 'https://proto-x.net/upload/iblock/25e/10d_ir-with-flag.png',
             description:
                 [
@@ -132,6 +141,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-11L-EH10F36IR',
+             price: '1570',
             img: 'https://proto-x.net/upload/iblock/174/11l_with-flag.png',
             description:
                 [
@@ -151,6 +161,7 @@ export const catalogSections = [
         {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-11L-PE20F36IR',
+            price: '3534',
             img: 'https://proto-x.net/upload/iblock/174/11l_with-flag.png',
             description:
                 [
@@ -205,6 +216,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-12L-PE20V212IR',
+            price: '4123',
             img: 'https://proto-x.net/upload/iblock/ebd/12l_with-flag.png',
             description:
                 [
@@ -223,6 +235,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-10Q-EH10F28',
+            price: '1679',
             img: 'https://proto-x.net/upload/iblock/893/Proto-AHD_10Q_EH10F28.png',
             description:
                 [
@@ -241,6 +254,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-1B-EH10F36IR',
+            price: '1866',
             img: 'https://proto-x.net/upload/iblock/ffd/1b_with-flag.png',
             description:
                 [
@@ -260,6 +274,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4V-PE20F36IR',
+            price: '4319',
             img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
             description:
                 [
@@ -302,6 +317,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4V-PE20V212IR',
+            price: '4654',
             img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
             description:
                 [
@@ -323,6 +339,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4V-PE20M212IR',
+        price: '5433',
             img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
             description:
                 [
@@ -400,6 +417,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-3W-EH10V212IR',
+            price: '3141',
             img: 'https://proto-x.net/upload/iblock/7ab/3w_with-flag.png',
             description:
                 [
@@ -419,6 +437,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-8W-EH10V212IR',
+            price: '4662',
             img: 'https://proto-x.net/upload/iblock/749/z8w-with-flag.jpg',
             description:
                 [
@@ -438,6 +457,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-1W-EH10F36IR',
+            price: '1866',
             img: 'https://proto-x.net/upload/iblock/161/1w_with-flag.png',
             description:
                 [
@@ -458,6 +478,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-8W-EH10F36IR',
+            price: '3762',
             img: 'https://proto-x.net/upload/iblock/35a/z8w-fix-with-flag.jpg',
             description:
                 [
@@ -477,6 +498,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-5W-PE20F36IR',
+            price: '4123',
             img: 'https://proto-x.net/upload/iblock/890/z5w-with-flag.jpg',
             description:
                 [
@@ -499,6 +521,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-8W-PE20F36IR',
+            price: '4123',
             img: 'https://proto-x.net/upload/iblock/a4d/z8w-fix-with-flag.jpg',
             description:
                 [
@@ -520,6 +543,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-8W-PE20V212IR',
+            price: '4811',
             img: 'https://proto-x.net/upload/iblock/f02/z8w-with-flag.jpg',
             description:
                 [
@@ -541,6 +565,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-8W-PE20M212IR',
+            price: '5890',
             img: 'https://proto-x.net/upload/iblock/368/z8w-with-flag.jpg',
             description:
                 [
@@ -562,6 +587,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-2W-PE20V212IR',
+            price: '4516',
             img: 'https://proto-x.net/upload/iblock/368/z8w-with-flag.jpg',
             description:
                 [
@@ -583,6 +609,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-2W-PE20M212IR',
+            price: '5596',
             img: 'https://proto-x.net/upload/iblock/b37/z2w_with-flag.png',
             description:
                 [
@@ -623,6 +650,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4W-PE20V212IR',
+            price: '4284',
             img: 'https://proto-x.net/upload/iblock/b37/z2w_with-flag.png',
             description:
                 [
@@ -644,6 +672,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4W-PE20M212IR',
+            price: '5793',
             img: 'https://proto-x.net/upload/iblock/b37/z2w_with-flag.png',
             description:
                 [
@@ -665,6 +694,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-S13Z18IR',
+            price: '35370',
             img: 'https://proto-x.net/upload/iblock/c2f/ahd_a13z17ir.png',
             description:
                 [
@@ -717,6 +747,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-UDR404HD (Юж.Корея)',
+            price: '15016',
             img: 'https://proto-x.net/upload/iblock/26f/5.png',
             description:
                 [
@@ -745,6 +776,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD404E',
+            price: '4319',
             img: 'https://proto-x.net/upload/iblock/e40/ahd_404e_update.png',
             description:
                 [
@@ -767,6 +799,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD404',
+            price: '5302',
             img: 'https://proto-x.net/upload/iblock/ceb/ahd_404_update.png',
             description:
                 [
@@ -790,6 +823,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD404 (2Mp)',
+            price: '7461',
             img: 'https://proto-x.net/upload/iblock/0fe/ptx_ahd1602_restyle.png',
             description:
                 [
@@ -822,6 +856,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD404E (2Mp)',
+            price: '7835',
             img: 'https://proto-x.net/upload/iblock/0fa/ahd_404_update.png',
             description:
                 [
@@ -852,6 +887,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD404PRO (2Mp)',
+            price: '10799',
             img: 'https://proto-x.net/upload/iblock/05a/404pro.png',
             description:
                 [
@@ -882,6 +918,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD802',
+            price: '7854',
             img: 'https://proto-x.net/upload/iblock/183/ahd_404.png',
             nameSpecification: ["Количество каналов видео", "Количество каналов аудио", "Гибридный режим", "Программное обеспечение", "Выходы видео", "Выходы аудио", "Запись", "Воспроизведение", "Отображение", "Скорость записи", "Хранение данных", "Детектор движения", "Тревожные выходы/входы", "PTZ-управление", "Интерфейс для архивации", "Управление видеорегистратором", "Сетевое управление", "Сетевые функции", "Мобильные платформы", "Габаритные размеры", "Питание", "Потребление", "Комплектация"],
             description: ["Режим работы: ТРИГИБРИД", "Количество каналов видео/аудио: - 8/2", "Выходы видео/аудио: 1-VGA, 1-HDMI  (до 1920×1080) / 1-RCA", "Программное обеспечение:   Embedded Linux", "Режимы записи: запланированное время,   обнаружение движения, ручной режим,   запись по расписанию", "Возможность подключения до 8 AHD камер   2Мр в режиме 1080N", "Запись: 8×AHD720p@25fps + 8×IP720p@25fps или 8*1080N@12fps", "Воспроизведение: 8×AHD720p@25fps или 8×AHD1080N@12fps", "Отображение: 8×AHD720p@25fps + 8×IP720p@25fps или 8*1080N@12fps", "Архив: 1×HDD SATA до 4 Тб,↵   резервная копия: на USB-flash,↵   по сети на ПК", "Внешние интерфейсы: RJ45, 2×USB 2.0, RS-485", "Сетевые протоколы: TCP/IP, UDP, HTTP,↵   PPPoE, RTSP, ONVIF 2.0", "Питание: DC12В 2А", "Габаритные размеры: 260×250×48 мм"],
@@ -889,6 +926,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD804E (2Mp)',
+            price: '8925',
             img: 'https://proto-x.net/upload/iblock/1ee/ahd_404_update.png',
             nameSpecification: ["Количество каналов видео", "Количество каналов аудио", "Гибридный режим", "Программное обеспечение", "Формат записи", "Выходы видео", "Выходы аудио", "Запись", "Воспроизведение", "Отображение", "Скорость записи", "Хранение данных", "Детектор движения", "Тревожные выходы/входы", "PTZ-управление", "Интерфейс для архивации", "Управление видеорегистратором", "Сетевое управление", "Сетевые функции", "Мобильные платформы", "Габаритные размеры", "Питание", "Потребление", "Комплектация"],
             description: ["Режим работы: ТРИГИБРИД", "Программное обеспечение: Embedded Linux", "Режимы работы: AHD+Analog; AHD+IP;   AHD+IP+Analog; IP", "Кол-во аналоговых каналов Видео: 8 BNC", "Кол-во аналоговых каналов Аудио: 4 RCA", "Кодек сжатия видео/аудио: H.264/G.711", "Режимы записи, отображения:   AHD/Analog: 8ch х10…@25fps + 8ch x720p@25fps;       4ch x1080p@25fps", "Типы записи: Ручная запись, запись по   расписанию, запись по движению", "Видеовыходы: 1xHDMI (до 1920х1080),   1xVGA (до 1920х1080)", "Аудиовыходы: 1-RCA", "Детектор движения: каждый канал↵   (192 области), настройка чувствительности", "Сетевой порт: 10/100 Мбит/с, RJ45", "Сетевые протоколы: TCP, UDP, HTTP, RTSP,  SMTP, FTP, ONVIF, поддержка P2P, Wi-Fi, 3G", "PTZ управление: по  RS-485, по сети", "Способы архивации: USB HDD, USB-flash,   загрузка по сети, просмотр на ПК", "Архив: 1×HDD SATA до 4 Тб", "Управление видеорегистратором: Пульт ДУ;   USB-мышь; Web интерфейс; CMS", "Мобильные клиенты: Android, iOS", "Питание: DC12V 2А↵", "Питание адаптера: AC220V 50Hz", "Габаритные размеры: 260×250×48 мм"],
@@ -896,6 +934,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-AHD804 (2Mp)',
+            price: '12763',
             img: 'https://proto-x.net/upload/iblock/552/ptx_ahd1602_restyle.png',
             nameSpecification: ["Количество каналов видео", "Количество каналов аудио", "Гибридный режим", "Программное обеспечение", "Формат записи", "Выходы видео", "Выходы аудио", "Запись", "Воспроизведение", "Отображение", "Скорость записи", "Хранение данных", "Детектор движения", "Тревожные выходы/входы", "PTZ-управление", "Интерфейс для архивации", "Управление видеорегистратором", "Сетевое управление", "Сетевые функции", "Мобильные платформы", "Габаритные размеры", "Питание", "Потребление", "Комплектация"],
             description: ["Режим работы: ТРИГИБРИД", "Процессор: HiSilicon 3531", "AHD: 8x1080p/8x720p;   AHD+IP: 2x1080p + 2x1080p/… 8x720p + 8x720p;   IP: 1x1080p+8x720p / 4x1080p", "Количество каналов Видео: 8 BNC", "Количество каналов Аудио: 4 RCA", "Программное обеспечение:   Embedded Linux", "Кодек сжатия: H.264", "Видеовыходы: 1-HDMI, 1-VGA", "Аудиовыходы: 1-RCA", "Запись: 8×1080p@12к/с", "Отображение: 8×1080p@12к/с", "Воспроизведение: 8×1080p@12к/с", "Дальность передачи видеосигнала: до 500м без потери качества", "Детектор движения: по каждому каналу", "PTZ управление: по  RS-485, по сети", "Способы архивации: USB HDD, USB-flash,   загрузка по сети, просмотр на ПК", "Управление видеорегистратором: Пульт ДУ;   USB-мышь; Web интерфейс; CMS", "Архив: 2×HDD SATA до 4 Тб,   резервная копия: на USB-flash,   по сети на ПК", "Внешние интерфейсы: RJ45, 2×USB 2.0,   RS485", "Сетевые протоколы: TCP, UDP, HTTP,   PPPoE, RTSP, ONVIF 2.0", "Питание: DC12В 4А", "Габаритные размеры: 343×267×70 мм"],
@@ -903,6 +942,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-UDR802HD (Юж.Корея)',
+            price: '11781',
             img: 'https://proto-x.net/upload/iblock/80e/5.png',
             nameSpecification: ["Количество каналов видео", "Количество каналов аудио", "Гибридный режим", "Программное обеспечение", "Формат записи", "Входы", "Выходы видео", "Выходы аудио", "Скорость записи", "Хранение данных", "Детектор движения", "Тревожные выходы/входы", "PTZ-управление", "Интерфейс для архивации", "Управление видеорегистратором", "Сетевое управление", "Сетевые функции", "Мобильные платформы", "Габаритные размеры", "Питание", "Потребление", "Комплектация"],
             description: ["Гибрид AHD (720p) + Analog (960H)", "Количество каналов Видео 8 BNC", "Количество каналов Аудио 2 RCA", "Программное обеспечение  Embeded LINUX", "Формат записи H.264", "Выходы видео 1-HDMI, 1-VGA", "Выходы аудио 1-RCA", "Скорость записи 720p (NTSC) - 240 к/с,  720p (PAL) - 200 к/с", "Архив - 2 SATA HDD до 4Tb ,  поддержка e-SATA", "Мониторинг стабильности работы HDD (функция S.M.A.R.T)", "Детектор движения по каждому каналу", "Способы архивации: 3xUSB 2.0, USB HDD,  USB Flash, e-SATA HDD; по сети,  просмотр на ПК", "Управление видеорегистратором:  Передняя панель; Пульт ДУ; USB мышь;  через Web, через CMS", "Управление PTZ по RS-485", "Сетевое управление: WEB сервер, CMS,  до 100 пользователей. Dual Stream.", "Мобильные платформы: iOS, Android", "Поддержка TCP/IP, UDP, DHCP, DNS,   DDNS, NTP, UPNP, EMAIL", "Габаритные размеры: 320×330×70 мм", "Питание DC 12V / 4A"],
@@ -910,6 +950,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'PTX-UDR802HDT (2Mp) (Юж.Корея)',
+            price: '15780',
             img: 'https://proto-x.net/upload/iblock/455/udr_2mp_flag.png',
             nameSpecification: ["Количество каналов видео", "Количество каналов аудио", "Гибридный режим", "Программное обеспечение", "Формат записи", "Входы", "Выходы видео", "Выходы аудио", "Скорость записи", "Хранение данных", "Детектор движения", "Тревожные выходы/входы", "PTZ-управление", "Интерфейс для архивации", "Управление видеорегистратором", "Сетевое управление", "Сетевые функции", "Мобильные платформы", "Габаритные размеры", "Питание", "Потребление", "Комплектация"],
             description: ["Гибрид AHD (1080p/720p) +   TVI (1080p/720p) + Analog (960H)", "Количество каналов Видео 8 BNC", "Количество каналов Аудио 2 RCA", "Программное обеспечение  Embeded LINUX", "Формат записи H.264", "Выходы видео 1-HDMI, 1-VGA", "Выходы аудио 1-RCA", "Скорость записи 1080p (NTSC) - 120 к/с,  1080p (PAL) - 100 к/с", "Архив - 2 SATA HDD до 4Tb ,  поддержка e-SATA", "Мониторинг стабильности работы HDD  (функция S.M.A.R.T)", "Детектор движения по каждому каналу", "Способы архивации: 3xUSB 2.0, USB HDD,  USB Flash, e-SATA HDD; по сети,  просмотр на ПК", "Управление видеорегистратором:↵  Передняя панель; Пульт ДУ; USB мышь;  через Web, через CMS", "Управление PTZ по RS-485", "Сетевое управление: WEB сервер, CMS,  до 100 пользователей. Dual Stream.", "Мобильные платформы: iOS, Android", "Поддержка TCP/IP, UDP, DHCP, DNS,   DDNS, NTP, UPNP, EMAIL", "Габаритные размеры: 320×330×70 мм", "Питание DC 12V / 4A"],
@@ -917,6 +958,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-videoreg',
             label: 'AHD видеорегистратор PTX-AHD1602 (5Mp)',
+            price: '22110',
             img: 'https://proto-x.net/upload/iblock/455/udr_2mp_flag.png',
             nameSpecification: ["Детектор движения", "Сетевые протоколы", "Порты", "Питание", "Габаритные размеры", "Операционная система", "Разрешение видеопотока", "Аудиовход", "Аудиовыход", "USB", "Гибридный режим", "Входы", "Выходы видео", "Воспроизведение", "Скорость записи", "Кодек сжатия видео", "Управление видеорегистратором", "Вес", "Стандарт видео", "Жесткий диск", "Рабочая температура", "Рабочая влажность"],
             description: ["Гибрид AHD (1080p/720p) +   TVI (1080p/720p) + Analog (960H)", "Количество каналов Видео 8 BNC", "Количество каналов Аудио 2 RCA", "Программное обеспечение  Embeded LINUX", "Формат записи H.264", "Выходы видео 1-HDMI, 1-VGA", "Выходы аудио 1-RCA", "Скорость записи 1080p (NTSC) - 120 к/с,  1080p (PAL) - 100 к/с", "Архив - 2 SATA HDD до 4Tb ,  поддержка e-SATA", "Мониторинг стабильности работы HDD  (функция S.M.A.R.T)", "Детектор движения по каждому каналу", "Способы архивации: 3xUSB 2.0, USB HDD,  USB Flash, e-SATA HDD; по сети,  просмотр на ПК", "Управление видеорегистратором:↵  Передняя панель; Пульт ДУ; USB мышь;  через Web, через CMS", "Управление PTZ по RS-485", "Сетевое управление: WEB сервер, CMS,  до 100 пользователей. Dual Stream.", "Мобильные платформы: iOS, Android", "Поддержка TCP/IP, UDP, DHCP, DNS,   DDNS, NTP, UPNP, EMAIL", "Габаритные размеры: 320×330×70 мм", "Питание DC 12V / 4A"],
@@ -5667,6 +5709,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto-X Combo-AHD 4W",
+            price: '20617',
             categoryName: "cctv-kits",
             nameSpecification: [
                 "Разрешение матрицы",

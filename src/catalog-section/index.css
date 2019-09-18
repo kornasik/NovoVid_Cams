@@ -16,7 +16,7 @@
 }
 
 .catalog-section-block-left{
-    width: 175px;
+    width: 145px;
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-left: 1px solid black;
@@ -34,10 +34,12 @@
 
 .catalog-section-block {
     display: flex;
+    margin-top: 5px;
 }
 
 .catalog-section-block-title{
     position: relative;
+    top: 5px;
     left: 201px;
     font-size: 24px;
     font-weight: bold;
@@ -45,7 +47,7 @@
 }
 
 .catalog-section-block-left-item:last-child{
-    margin: 20px 15px 0 15px;
+    margin: 20px 5px 0 5px;
 }
 
 .catalog-section-block-left-title{
