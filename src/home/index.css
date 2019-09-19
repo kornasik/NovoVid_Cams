@@ -119,10 +119,7 @@
     color: blue;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .feedback-block {
     margin-top: 60px;
@@ -130,29 +127,7 @@ form {
     justify-content: space-around;
 }
 
-form label {
-    display: flex;
-    flex-direction: column;
-}
 
-form label input {
-    margin-top: 10px;
-    width: 420px;
-    outline: 0;
-    outline-offset: 0;
-    background-color: #F7F7F7;
-    border: 0;
-    height: 40px;
-}
-
-.form-btn {
-    height: 40px;
-    width: 100px;
-    background-color: #79BFF0;
-    color: white;
-    border: none;
-    margin: 50px auto 0 auto;
-}
 
 iframe {
     margin: auto 0;

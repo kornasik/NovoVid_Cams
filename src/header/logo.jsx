@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 import logo from '../img/logo.jpg.png';
 
@@ -7,7 +8,9 @@ import './index.css';
 export const Logo = () => {
     return (
         <div className="header-title-logo">
-            <img className="header-logo" src={logo} alt="Logo" />
+            <Link to="/">
+                <img className="header-logo" src={logo} alt="Logo"/>
+            </Link>
         </div>
     )
 };

@@ -1,18 +1,23 @@
 export const formName = [
     {
         label: "Имя",
-        name: "name"
+        name: "name",
+        type: "text"
     }, {
         label: "Фамилия",
-        name: "surname"
+        name: "surname",
+        type: "text"
     }, {
         label: "Телефон",
-        name: "phone"
+        name: "phone",
+        type: "tel"
     }, {
         label: "E-mail",
-        name: "mail"
+        name: "email",
+        type: "email"
     }, {
         label: "Комментарий",
-        name: "comment"
+        name: "comment",
+        type: "text"
     }
 ];

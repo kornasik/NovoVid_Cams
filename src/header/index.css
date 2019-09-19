@@ -35,6 +35,8 @@ body {
     margin-top: 5px;
     font-weight: bold;
     font-size: 14px;
+    text-decoration: none;
+    color: black;
 }
 
 .header-item-title {

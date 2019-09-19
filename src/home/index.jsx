@@ -3,13 +3,14 @@ import React, {Component, Fragment} from 'react';
 import {Link} from "react-router-dom";
 import {catalogHome} from "../dictionary/catalog";
 
-import {formName} from "../dictionary";
-
 import serviceOne from '../img/service1.jpg';
 import serviceTwo from '../img/service2.jpg';
 import serviceThree from '../img/service3.jpg';
 
+import Form from "../elements/form";
+
 import './index.css';
+
 
 
 export default class Home extends Component {
@@ -35,18 +36,6 @@ export default class Home extends Component {
                     allowFullScreen/>
         )
     };
-
-    form = () => {
-        return formName.map((item)=>{
-            return(
-                <label>
-                    {item.label}:
-                    <input type="text" name={item.name} />
-                </label>
-            )
-        })
-    };
-
 
     render() {
         return (
@@ -93,10 +82,7 @@ export default class Home extends Component {
                         </div>
                         <div className="feedback-block">
                             {this.video()}
-                            <form>
-                                {this.form()}
-                                <input className="form-btn" type="submit" value="Отправить" />
-                            </form>
+                            <Form/>
                         </div>
                     </div>
                 </div>

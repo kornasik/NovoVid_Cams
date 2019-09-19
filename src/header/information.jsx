@@ -13,7 +13,7 @@ export const Information = () => {
                     <img className="header-item-icon" src={phone} />
                     <div className="header-item-wrapper">
                         <div className="header-item-title">ПОЗВОНИТЕ НАМ</div>
-                        <div className="header-item-description">+375291661221</div>
+                        <a className="header-item-description" href="tel:+375291661221"> <div >+375291661221</div></a>
                     </div>
 
                 </div>
@@ -38,9 +38,9 @@ export const Information = () => {
     const social = () => {
         return (
             <div className="social-block">
-                <div className="social social-telegram" />
-                <div className="social social-instagram" />
-                <div className="social social-vk" />
+                <a href="https://t.me/novovid.by"><div className="social social-telegram" /></a>
+                <a href="https://www.instagram.com/novovid.by/"><div className="social social-instagram" /></a>
+                <a href="https://vk.com/novovid"><div className="social social-vk" /></a>
             </div>
         )
     };
