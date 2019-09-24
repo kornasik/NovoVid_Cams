@@ -17,7 +17,7 @@ export default class Form extends Component{
 
     render() {
         return(
-            <form>
+            <form method="POST" action="https://formspree.io/vid4y@yandex.ru">
                 {this.form()}
                 <input className="form-btn" type="submit" value="Отправить" />
             </form>

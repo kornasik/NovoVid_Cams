@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './index.css';
 
 import {Logo} from './logo';
-import {Information} from "./information";
+import Information from "./information";
 
 export default class Header extends Component {
     render() {

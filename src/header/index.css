@@ -90,6 +90,36 @@ body {
     background-size: contain;
 }
 
+.basket-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.basket-icon:hover {
+    background-color: lightgray;
+    border-radius: 100px;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.basket a {
+    text-decoration: none;
+    position: relative;
+}
+
+.basket-count{
+    font-size:14px;
+    position: absolute;
+    left: 30px;
+    color: red;
+}
+
 ul {
     display: flex;
     width: 100%;

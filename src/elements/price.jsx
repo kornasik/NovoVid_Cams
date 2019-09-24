@@ -5,7 +5,6 @@ import './index.css'
 
 
 export const Price = ({props}) => {
-    console.log(props);
     return catalogSections.map((item) => {
         const splitItemLabel = item.label.split(' ').join('').toLowerCase();
         if (item.categoryName === props.match.params.id && splitItemLabel === props.match.params.name) {

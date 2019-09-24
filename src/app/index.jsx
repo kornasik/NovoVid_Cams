@@ -4,9 +4,9 @@ import './index.css';
 import Header from "../header";
 import Home from "../home";
 import Catalog from "../catalog";
-import Footer from "../footer";
 import CatalogSection from "../catalog-section";
 import CatalogItem from "../catalog-item";
+import Basket from "../basket";
 
 
 export default class App extends React.Component {
@@ -17,9 +17,9 @@ export default class App extends React.Component {
                     <Header/>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/catalog" component={Catalog} />
+                    <Route exact path="/basket" component={Basket} />
                     <Route exact path="/catalog/:id" component={CatalogSection} />
                     <Route exact path="/catalog/:id/:name" component={CatalogItem} />
-                    <Footer />
                 </div>
             </Router>
         )

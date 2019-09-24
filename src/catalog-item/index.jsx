@@ -3,6 +3,7 @@ import {LeftMenu} from "../left-menu";
 import {catalogSections} from "../dictionary/catalog";
 import {Link} from "react-router-dom";
 import {Price} from "../elements/price";
+import AddBasketButton from '../elements/add-basket-button';
 
 import './index.css';
 import '../left-menu/index.css';
@@ -88,6 +89,9 @@ export default class CatalogItem extends Component {
                                 {this.catalogItemDescription()}
                                 <Price
                                     props={this.props}
+                                />
+                                <AddBasketButton
+                                url={this.props}
                                 />
                             </ul>
                         </div>

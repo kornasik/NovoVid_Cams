@@ -1,0 +1,63 @@
+.order-item-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FAFAFB;
+}
+
+.order-item-block a {
+    text-decoration: none;
+}
+
+.order-item-label {
+    display: flex;
+    margin-left: 20px;
+}
+
+.order-item-price {
+    text-align: right;
+    display: flex;
+}
+
+.order-item-image {
+    width: 100px;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.total-sum {
+    text-align: right;
+}
+
+.wrapper-header-for-basket {
+    display: flex;
+}
+
+.basket-btn-clear {
+    margin: auto 20px;
+}
+
+.basket-btn-clear button {
+    border: 1px solid lightgray !important;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.basket-btn-clear button:hover {
+    background-color: #EEEEEE;
+}
+
+.del-item-btn {
+    background: url("../img/del-item.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+}
+
+.del-item-btn:hover {
+    background-color: lightgray;
+    border-radius: 100px;
+}

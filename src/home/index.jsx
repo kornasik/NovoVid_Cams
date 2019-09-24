@@ -84,6 +84,7 @@ export default class Home extends Component {
                             {this.video()}
                             <Form/>
                         </div>
+
                     </div>
                 </div>
             </Fragment>
