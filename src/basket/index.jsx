@@ -7,6 +7,14 @@ import {catalogSections} from "../dictionary/catalog";
 import './index.css';
 
 class Basket extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            basket: props.basket,
+            basketCount: props.basketCount
+        };
+    }
+
     renderOrderList = () => {
         const {basket} = this.props;
         console.log(basket);
@@ -28,11 +36,27 @@ class Basket extends Component {
                         <Link to={url}>
                             <div className="order-item-label">
                                 <img className="order-item-image" src={image}/>
-                                {item.label}
+                                <div className="order-item-label-block">
+                                    {item.label}
+                                </div>
                             </div>
                         </Link>
                         <div className="order-item-price">
-                            {price}
+                            <div className="order-item-quantity">
+                                кол-во:
+                                <div className="order-item-quantity-delete"
+                                     id={item.label}
+                                     onClick={this.deleteAmountItem}
+                                />
+                                {item.amount}
+                                <div className="order-item-quantity-add"
+                                     id={item.label}
+                                     onClick={this.addAmountItem}
+                                />
+                            </div>
+                            <div className="order-item-price-block">
+                                {price}
+                            </div>
                             <div
                                 className="del-item-btn"
                                 id={id}
@@ -49,6 +73,36 @@ class Basket extends Component {
                 </div>
             )
         }
+    };
+
+    addAmountItem = ({target: {id}}) => {
+        const newArr = this.props.basket;
+        newArr.forEach((item, index) => {
+            if (item.label === id) {
+                newArr[index].amount += 1;
+                return;
+            }
+        });
+        this.props.amountAdd(newArr);
+        this.renderOrderList();
+    };
+
+    deleteAmountItem = ({target: {id}}) => {
+        let newArr = this.props.basket;
+        newArr.forEach((item, index) => {
+            if (item.label === id && item.amount !== 1) {
+                newArr[index].amount -= 1;
+                return;
+            }
+
+            if(item.label === id && item.amount === 1){
+               newArr = [...newArr.slice(0, index), ...newArr.slice(index + 1)];
+               return;
+            }
+
+        });
+        this.props.amountAdd(newArr);
+        this.renderOrderList();
     };
 
     showImage = (labelItem) => {
@@ -85,11 +139,11 @@ class Basket extends Component {
     totalSum = () => {
         const {basket} = this.props;
         let sum = 0;
-        basket.forEach(({price}) => {
+        basket.forEach(({price, amount}) => {
             if (isNaN(price)) {
                 return null;
             }
-            sum += price;
+            sum = price * amount + sum;
         });
         return (
             <h2 className="total-sum">
@@ -103,7 +157,7 @@ class Basket extends Component {
     };
 
     render() {
-        const {basket} = this.props;
+        const { basket } = this.props;
         return (
             <div className="basketBlock">
                 <div className="container">

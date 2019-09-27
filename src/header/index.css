@@ -116,8 +116,14 @@ body {
 .basket-count{
     font-size:14px;
     position: absolute;
-    left: 30px;
-    color: red;
+    left: 65px;
+    color: white;
+    text-align: center;
+    background-color: #FFB31A;
+    height: 17px;
+    width: 17px;
+    border-radius: 100px;
+    z-index: 999;
 }
 
 ul {

@@ -9,3 +9,15 @@ export const clearBasket = () => {
 export const deleteItem = (payload) => {
     return {type: "DELETE_ITEM", payload}
 };
+
+export const amountAdd = (payload) => {
+  return {type: "AMOUNT_ADD", payload}
+};
+
+export const amountDelete = (payload) => {
+  return {type: "AMOUNT_DELETE", payload}
+};
+
+export const basketCountAction = (payload) => {
+  return {type: "BASKET_COUNT", payload}
+};

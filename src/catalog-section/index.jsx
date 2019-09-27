@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import {catalogSections, catalog} from "../dictionary/catalog";
-import {LeftMenu} from "../left-menu";
+import {LeftMenu} from "./left-menu";
 import {PriceSection} from './price-section';
 import AddBasketButton from "../elements/add-basket-button";
 import './index.css';
 
 export default class CatalogSection extends Component {
-    sectionBlock = () => {
+    catalogSectionTitle = () => {
         return catalog.map((item) => {
             if (item.link === this.props.match.params.id) {
                 return (
@@ -51,7 +51,7 @@ export default class CatalogSection extends Component {
         return (
             <div className="container">
                 <div className="catalog-section-block-title">
-                    {this.sectionBlock()}
+                    {this.catalogSectionTitle()}
                 </div>
                 <div className="catalog-section-block">
                     <Link to="/" style={{position: 'absolute'}}>

@@ -1,12 +1,13 @@
 import React, {Fragment, Component} from 'react';
-import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
+import BasketIcon from "./basket-icon";
+import {Social} from "./social";
 import phone from '../img/phone.png';
 import clock from '../img/clock.png'
 import mail from '../img/mail.png';
-import basket from '../img/basket.png';
 
 import './index.css';
+
 
 class Information extends Component {
     info = () => {
@@ -42,39 +43,14 @@ class Information extends Component {
         )
     };
 
-    rightBlock = () => {
-        return (
-            <div className="right-block">
-                <div className="basket">
-                    <Link to="/basket">
-                        {this.props.basket.length !== 0 ?
-                            <div className="basket-count">
-                                {this.props.basket.length}
-                            </div>
-                            : null}
-                        <img className="basket-icon" src={basket}/>
-                    </Link>
-                </div>
-                <div className="social-block">
-                    <a href="https://t.me/novovid.by">
-                        <div className="social social-telegram"/>
-                    </a>
-                    <a href="https://www.instagram.com/novovid.by/">
-                        <div className="social social-instagram"/>
-                    </a>
-                    <a href="https://vk.com/novovid">
-                        <div className="social social-vk"/>
-                    </a>
-                </div>
-            </div>
-        )
-    };
-
     render() {
         return (
             <Fragment>
                 {this.info()}
-                {this.rightBlock()}
+                <div className="right-block">
+                    <BasketIcon />
+                    <Social />
+                </div>
             </Fragment>
         )
     }
@@ -82,7 +58,8 @@ class Information extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        basket: state.basket
+        basket: state.basket,
+        basketCount: state.basketCount
     }
 };
 
