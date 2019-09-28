@@ -28,11 +28,15 @@ class Basket extends Component {
                         <Link to={url}>
                             <div className="order-item-label">
                                 <img className="order-item-image" src={image}/>
-                                {item.label}
+                                <div className="order-item-label-block">
+                                    {item.label}
+                                </div>
                             </div>
                         </Link>
                         <div className="order-item-price">
-                            {price}
+                            <div className="order-item-price-block">
+                                {price}
+                            </div>
                             <div
                                 className="del-item-btn"
                                 id={id}

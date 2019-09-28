@@ -47,11 +47,9 @@ class Information extends Component {
             <div className="right-block">
                 <div className="basket">
                     <Link to="/basket">
-                        {this.props.basket.length !== 0 ?
-                            <div className="basket-count">
-                                {this.props.basket.length}
-                            </div>
-                            : null}
+                        <div className="basket-count">
+                            {this.props.basket.length}
+                        </div>
                         <img className="basket-icon" src={basket}/>
                     </Link>
                 </div>

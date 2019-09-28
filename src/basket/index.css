@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding: 10px;
     background-color: #FAFAFB;
 }
 
@@ -20,10 +19,24 @@
     display: flex;
 }
 
+.order-item-quantity {
+    display: flex;
+    margin: auto 150px auto 0;
+}
+
+
+.order-item-price-block {
+    margin-top: 40px;
+}
+
 .order-item-image {
     width: 100px;
     height: 100%;
     margin-right: 40px;
+}
+
+.order-item-label-block {
+    margin-top: 40px;
 }
 
 .total-sum {
@@ -51,13 +64,12 @@
 }
 
 .del-item-btn {
-    background: url("../img/del-item.png") no-repeat;
-    width: 18px;
-    height: 18px;
+    background: url("../img/del-item.png") no-repeat center;
+    width: 70px;
+    height: 100%;
     margin-left: 20px;
 }
 
 .del-item-btn:hover {
     background-color: lightgray;
-    border-radius: 100px;
 }
