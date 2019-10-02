@@ -6,13 +6,18 @@ export class PriceSection extends Component{
             const price = Math.ceil(this.props.price * 0.032);
             return (
                 <div className="price-section">
-                    {price} Br
+                    <span>
+                        {price} Br
+                    </span>
+
                 </div>
             )
         } else{
             return (
                 <div className="price-section">
-                    Уточняйте
+                    <span>
+                       Уточняйте
+                    </span>
                 </div>
             )
         }

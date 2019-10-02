@@ -6,6 +6,7 @@ import {PriceSection} from './price-section';
 import AddBasketButton from "../elements/add-basket-button";
 import OneClick from "../elements/one-click";
 import './index.css';
+import CounterItem from "../elements/counter-item";
 
 export default class CatalogSection extends Component {
     sectionBlock = () => {
@@ -39,7 +40,10 @@ export default class CatalogSection extends Component {
                                 <PriceSection
                                     price={item.price}
                                 />
-                                <OneClick/>
+                                <CounterItem/>
+                                <OneClick
+                                    itemLabel={item.label}
+                                />
                                 <AddBasketButton/>
                             </div>
                         </div>

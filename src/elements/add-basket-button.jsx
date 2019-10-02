@@ -24,8 +24,8 @@ class AddBasketButton extends Component {
             this.totalSum(itemPrice);
 
         } else {
-            const itemLabel = event.target.parentElement.childNodes[0].textContent;
-            const itemPrice = Number((event.target.parentElement.childNodes[1].textContent).split(' ')[1]);
+            const itemLabel = event.target.parentElement.parentElement.childNodes[0].textContent;
+            const itemPrice = Number((event.target.parentElement.childNodes[0].textContent).split(' ')[0]);
             const newObj = {
                 label: itemLabel,
                 price: itemPrice

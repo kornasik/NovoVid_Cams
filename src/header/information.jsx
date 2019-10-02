@@ -16,7 +16,7 @@ class Information extends Component {
                     <img className="header-item-icon" src={mail}/>
                     <div className="header-item-wrapper">
                         <div className="header-item-title">НАША ПОЧТА</div>
-                        <div className="header-item-description">info@novovid.by</div>
+                        <div className="header-item-description">info@belvideo.by</div>
                     </div>
                 </div>
 
@@ -54,13 +54,13 @@ class Information extends Component {
                     </Link>
                 </div>
                 <div className="social-block row">
-                    <a href="https://t.me/novovid.by">
+                    <a href="https://t.me/belvideo.by">
                         <div className="social social-telegram col"/>
                     </a>
-                    <a href="https://www.instagram.com/novovid.by/">
+                    <a href="https://www.instagram.com/belvideo.by/">
                         <div className="social social-instagram col"/>
                     </a>
-                    <a href="https://vk.com/novovid">
+                    <a href="https://vk.com/belvideo.by">
                         <div className="social social-vk col"/>
                     </a>
                 </div>
