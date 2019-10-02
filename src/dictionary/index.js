@@ -21,3 +21,12 @@ export const formName = [
         type: "text"
     }
 ];
+
+export const pointsIssue = [
+    {
+        city: "Минск",
+        street: "Киселева",
+        number: "55",
+        total: "г.Минск, улица Киселева 55"
+    }
+];

@@ -65,7 +65,7 @@ export default class CatalogItem extends Component {
         return (
             <div className="container">
                 <div className="catalog-item-block">
-                    <Link to="/" style={{position: 'absolute'}}>
+                    <Link className="btn-home" to="/" style={{position: 'absolute'}}>
                         Главная
                     </Link>
                     <div className="catalog-section-block-left">

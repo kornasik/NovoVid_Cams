@@ -4,6 +4,7 @@ import {catalogSections, catalog} from "../dictionary/catalog";
 import {LeftMenu} from "../left-menu";
 import {PriceSection} from './price-section';
 import AddBasketButton from "../elements/add-basket-button";
+import OneClick from "../elements/one-click";
 import './index.css';
 
 export default class CatalogSection extends Component {
@@ -26,20 +27,21 @@ export default class CatalogSection extends Component {
                     <Link to={url}>
                         <div className="catalog-section-item">
                             <div className="catalog-section-item-title">{item.label}</div>
-                            <div className="price-section-block">
-                                <PriceSection
-                                    price={item.price}
-                                />
-                            </div>
                             <div className="catalog-section-item-img"><img src={item.img}/></div>
                             <ul className="catalog-section-item-description">
                                 <li>{item.description[0]}</li>
                                 <li>{item.description[1]}</li>
                                 <li>{item.description[2]}</li>
                                 <li>{item.description[3]}</li>
-                                <li style={{marginBottom: '30px'}}>{item.description[4]}</li>
+                                <li style={{marginBottom: '15px'}}>{item.description[4]}</li>
                             </ul>
-                            <AddBasketButton />
+                            <div className="info-buy">
+                                <PriceSection
+                                    price={item.price}
+                                />
+                                <OneClick/>
+                                <AddBasketButton/>
+                            </div>
                         </div>
                     </Link>
                 );
@@ -54,7 +56,7 @@ export default class CatalogSection extends Component {
                     {this.sectionBlock()}
                 </div>
                 <div className="catalog-section-block">
-                    <Link to="/" style={{position: 'absolute'}}>
+                    <Link className="btn-home" to="/" style={{position: 'absolute'}}>
                         Главная
                     </Link>
                     <div className="catalog-section-block-left">

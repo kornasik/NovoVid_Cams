@@ -12,7 +12,7 @@ class Information extends Component {
     info = () => {
         return (
             <Fragment>
-                <div className="header-item">
+                <div className="header-item col">
                     <img className="header-item-icon" src={mail}/>
                     <div className="header-item-wrapper">
                         <div className="header-item-title">НАША ПОЧТА</div>
@@ -20,7 +20,7 @@ class Information extends Component {
                     </div>
                 </div>
 
-                <div className="header-item">
+                <div className="header-item col">
                     <img className="header-item-icon" src={clock}/>
                     <div className="header-item-wrapper">
                         <div className="header-item-title">РЕЖИМ РАБОТЫ</div>
@@ -28,7 +28,7 @@ class Information extends Component {
                     </div>
                 </div>
 
-                <div className="header-item">
+                <div className="header-item col">
                     <img className="header-item-icon" src={phone}/>
                     <div className="header-item-wrapper">
                         <div className="header-item-title">ПОЗВОНИТЕ НАМ</div>
@@ -53,15 +53,15 @@ class Information extends Component {
                         <img className="basket-icon" src={basket}/>
                     </Link>
                 </div>
-                <div className="social-block">
+                <div className="social-block row">
                     <a href="https://t.me/novovid.by">
-                        <div className="social social-telegram"/>
+                        <div className="social social-telegram col"/>
                     </a>
                     <a href="https://www.instagram.com/novovid.by/">
-                        <div className="social social-instagram"/>
+                        <div className="social social-instagram col"/>
                     </a>
                     <a href="https://vk.com/novovid">
-                        <div className="social social-vk"/>
+                        <div className="social social-vk col"/>
                     </a>
                 </div>
             </div>

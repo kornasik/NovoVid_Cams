@@ -1,11 +1,11 @@
 .catalog-section-block-right a {
     margin-top: 20px;
-    margin-bottom: 50px;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 3px 3px 0 0;
     text-align: center;
     text-decoration: none;
     color: black;
+    height: fit-content;
 }
 
 .catalog-section-block-right {
@@ -61,13 +61,13 @@
 .catalog-section-item-description{
     text-align: left;
     width: 200px;
-    height: 280px;
     display: flex;
     flex-direction: column;
     margin: 0 auto 0 auto;
 }
 
 .catalog-section-item-description li{
+    font-size: 12px;
     list-style-type: disc;
 }
 
@@ -76,12 +76,17 @@
 }
 
 .price-section{
-    display: inline-flex;
+    background-color: #3D3D3D;
+    color: white;
+    width: 60%;
     font-size: 24px;
-    font-weight: bold;
-    margin: 20px auto 40px auto;
 }
 
 .price {
     margin: 0 7px;
 }
+
+.info-buy{
+    display: flex;
+}
+

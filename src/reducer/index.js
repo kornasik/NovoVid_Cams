@@ -1,6 +1,7 @@
 const reducer = (
     state = {
-         basket: []
+        basket: [],
+        totalSum: 0
     }
     , action) => {
     switch (action.type) {
@@ -21,6 +22,12 @@ const reducer = (
             return {
                 ...state,
                 basket: action.payload
+            };
+
+        case "TOTAL_SUM":
+            return {
+                ...state,
+                totalSum: action.payload
             };
 
         default:

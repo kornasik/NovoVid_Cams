@@ -9,3 +9,7 @@ export const clearBasket = () => {
 export const deleteItem = (payload) => {
     return {type: "DELETE_ITEM", payload}
 };
+
+export const totalSumAction = (payload) => {
+    return {type: "TOTAL_SUM", payload}
+};

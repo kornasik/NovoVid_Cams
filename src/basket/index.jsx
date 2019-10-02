@@ -3,8 +3,10 @@ import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
 import * as actions from '../actions';
 import {catalogSections} from "../dictionary/catalog";
+import MakeOrder from "./make-order";
 
 import './index.css';
+
 
 class Basket extends Component {
     renderOrderList = () => {
@@ -76,30 +78,16 @@ class Basket extends Component {
     };
 
     deleteItem = ({target}) => {
-        const {basket, deleteItem} = this.props;
-        basket.forEach(({label}, index) => {
-            if (label.split(' ').join('').toLowerCase() === target.id) {
+        const {basket, deleteItem, totalSum, totalSumAction} = this.props;
+        basket.forEach((item, index) => {
+            if (item.label.split(' ').join('').toLowerCase() === target.id) {
                 const newArr = [...basket.slice(0, index), ...basket.slice(index + 1)];
+                const newTotalSum = totalSum - item.price;
+                totalSumAction(newTotalSum);
                 deleteItem(newArr);
                 return null;
             }
         })
-    };
-
-    totalSum = () => {
-        const {basket} = this.props;
-        let sum = 0;
-        basket.forEach(({price}) => {
-            if (isNaN(price)) {
-                return null;
-            }
-            sum += price;
-        });
-        return (
-            <h2 className="total-sum">
-                Примерная сумма заказа {sum} руб.
-            </h2>
-        )
     };
 
     clearBasket = () => {
@@ -131,7 +119,7 @@ class Basket extends Component {
                     {this.renderOrderList()}
                     {
                         basket.length !== 0 ?
-                            this.totalSum()
+                            <MakeOrder />
                             : null
                     }
                 </div>
@@ -142,7 +130,8 @@ class Basket extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        basket: state.basket
+        basket: state.basket,
+        totalSum: state.totalSum
     }
 };
 

@@ -15,40 +15,47 @@ class AddBasketButton extends Component {
         event.preventDefault();
         if (this.props.url) {
             const itemLabel = event.target.parentElement.parentElement.parentElement.childNodes[0].textContent;
-            const itemPrice = event.target.parentElement.querySelector('.catalog-item-price').textContent;
-                const newObj = {
-                    label: itemLabel,
-                    price: Number(itemPrice.split(' ')[1]),
-                };
-                this.props.addBasket(newObj);
+            const itemPrice = Number((event.target.parentElement.querySelector('.catalog-item-price').textContent).split(' ')[1]);
+            const newObj = {
+                label: itemLabel,
+                price: itemPrice
+            };
+            this.props.addBasket(newObj);
+            this.totalSum(itemPrice);
 
         } else {
             const itemLabel = event.target.parentElement.childNodes[0].textContent;
-            const itemPrice = event.target.parentElement.childNodes[1].textContent;
+            const itemPrice = Number((event.target.parentElement.childNodes[1].textContent).split(' ')[1]);
             const newObj = {
                 label: itemLabel,
-                price: Number(itemPrice.split(' ')[1])
+                price: itemPrice
             };
             this.props.addBasket(newObj);
+            this.totalSum(itemPrice);
         }
+    };
+
+    totalSum = (priceItem) => {
+        let sum = this.props.totalSum;
+        sum += priceItem
+        this.props.totalSumAction(sum);
     };
 
     render() {
         return (
-            <a
-                href=""
+            <div
                 className="add-basket"
                 onClick={this.addBasket}
             >
-                Добавить в корзину
-            </a>
+            </div>
         )
     }
 }
 
 const mapStateToProps = (state) => {
     return {
-        basket: state.basket
+        basket: state.basket,
+        totalSum: state.totalSum
     }
 };
 

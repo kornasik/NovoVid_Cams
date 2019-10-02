@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} novovid\.by [NC]
+RewriteCond %{HTTP_HOST} belvideo\.by [NC]
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://novovid.by/$1 [R,L]
+RewriteRule ^(.*)$ https://belvideo.by/$1 [R,L]
