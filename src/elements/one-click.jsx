@@ -1,11 +1,11 @@
 import React, {Component, Fragment} from 'react';
+import close from '../img/del-item.png';
 
 import './index.css';
 
 export default class OneClick extends Component {
     viewPopUp = (event) => {
         event.preventDefault();
-        event.stopPropagation();
         document.querySelector('.pop-up-container').style.display = "block";
         document.querySelector('.pop-up-container').style.position = "absolute";
         document.querySelector('.pop-up-container').style.left = "0";
@@ -13,12 +13,22 @@ export default class OneClick extends Component {
 
         document.querySelector('.pop-up').style.display = "block";
         document.querySelector('.pop-up').style.position = "absolute";
-        document.querySelector('.pop-up').style.top = "50%";
-        document.querySelector('.pop-up').style.left = "50%";
+        document.querySelector('.pop-up').style.top = "200px";
+        document.querySelector('.pop-up').style.left = "calc(50% - 150px)";
 
     };
 
-    popUp = (event) =>{
+    popUp = (event) => {
+        event.preventDefault();
+    };
+
+    closePopUp = (event) => {
+        event.preventDefault();
+        document.querySelector('.pop-up-container').style.display = "none";
+        document.querySelector('.pop-up').style.display = "none";
+    };
+
+    donTouch = (event) => {
         event.preventDefault();
     };
 
@@ -32,10 +42,19 @@ export default class OneClick extends Component {
                 <div
                     className="pop-up-container"
                     onClick={this.popUp}
+                />
+                <div
+                    className="pop-up"
+                    onClick={this.donTouch}
                 >
-                    <div className="pop-up">
-
-                    </div>
+                    <img
+                        src={close}
+                        onClick={this.closePopUp}
+                    />
+                    <span>Для быстро заказа введите Ваш номер телефонаю</span>
+                    <input type="text"/>
+                    <input type="number"/>
+                    <button>Заказать</button>
                 </div>
             </Fragment>
 
