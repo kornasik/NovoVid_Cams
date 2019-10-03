@@ -1,6 +1,6 @@
 const reducer = (
     state = {
-        basket: [],
+        basket: JSON.parse(localStorage.getItem('belvideo.by')) || [],
         totalSum: 0
     }
     , action) => {

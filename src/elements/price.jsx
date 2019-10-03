@@ -12,7 +12,7 @@ export const Price = ({props}) => {
                 const price = Math.ceil(item.price * 0.032);
                 return (
                     <div className="catalog-item-price">
-                        Цена: {price} руб.
+                        Цена: {price} Br.
                     </div>
                 )
             } else {

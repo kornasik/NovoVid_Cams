@@ -84,6 +84,7 @@ class Basket extends Component {
                 const newArr = [...basket.slice(0, index), ...basket.slice(index + 1)];
                 const newTotalSum = totalSum - item.price;
                 totalSumAction(newTotalSum);
+                localStorage.setItem('belvideo.by', JSON.stringify(newArr));
                 deleteItem(newArr);
                 return null;
             }
@@ -91,6 +92,7 @@ class Basket extends Component {
     };
 
     clearBasket = () => {
+        localStorage.clear();
         this.props.clearBasket();
     };
 
