@@ -6,10 +6,9 @@ const reducer = (
     , action) => {
     switch (action.type) {
         case "ADD_BASKET":
-            const newArr = [...state.basket, action.payload];
             return {
                 ...state,
-                basket: newArr
+                basket: action.payload
             };
 
         case "CLEAR_BASKET":

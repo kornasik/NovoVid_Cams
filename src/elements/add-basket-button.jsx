@@ -1,15 +1,27 @@
 import React, {Component, Fragment} from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions';
-import basket from '../img/basket.png';
 
 class AddBasketButton extends Component {
-    countItem = (array, name) => {
-        array.forEach((item) => {
-            if (item.label === name) {
-                return true;
-            }
-        })
+
+    generateBasketArray = (object) => {
+        const {basket} = this.props;
+        console.log(basket);
+        if (basket.length !== 0) {
+            let basketArray = basket;
+            console.log('basketArray', basketArray);
+            basketArray.forEach((item) => {
+                console.log(item);
+                if (object.label === item.label) {
+                    item.amount += object.amount;
+                } else {
+                    basketArray.push(object);
+                }
+            });
+            return basketArray;
+        } else {
+            return [object];
+        }
     };
 
     addBasket = (event) => {
@@ -32,11 +44,12 @@ class AddBasketButton extends Component {
             const itemAmount = Number(event.target.parentElement.childNodes[1].childNodes[1].textContent);
             const newObj = {
                 label: itemLabel,
-                price: itemPrice
+                price: itemPrice,
+                amount: itemAmount
             };
             const lcArray = [...this.props.basket, newObj];
             localStorage.setItem('belvideo.by', JSON.stringify(lcArray));
-            this.props.addBasket(newObj);
+            this.props.addBasket(this.generateBasketArray(newObj));
             this.totalSum(itemPrice);
         }
     };
