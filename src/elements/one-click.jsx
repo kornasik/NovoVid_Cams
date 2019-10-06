@@ -12,7 +12,7 @@ export default class OneClick extends Component {
         document.querySelector('.pop-up-container').style.top = "0";
 
         document.querySelector('.pop-up').style.display = "block";
-        document.querySelector('.pop-up').style.position = "absolute";
+        document.querySelector('.pop-up').style.position = "fixed";
         document.querySelector('.pop-up').style.top = "200px";
         document.querySelector('.pop-up').style.left = "calc(50% - 150px)";
 

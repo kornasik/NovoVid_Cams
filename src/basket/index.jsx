@@ -15,12 +15,21 @@ class Basket extends Component {
         if (basket.length !== 0) {
             return basket.map((item) => {
                 const id = item.label.split(' ').join('').toLowerCase();
-                let price;
+
+                let priceSum;
                 if (!isNaN(item.price)) {
-                    price = <div>{item.price} руб.</div>
+                    priceSum = <div> {item.price * item.amount} руб.</div>
                 } else {
-                    price = <div>-</div>
+                    priceSum = <div>-</div>
                 }
+
+                let priceEd;
+                if (!isNaN(item.price)) {
+                    priceEd = <div>{item.price} руб.</div>
+                } else {
+                    priceEd = <div>-</div>
+                }
+
                 const image = this.showImage(item.label);
                 const splitItemLabel = item.label.split(' ').join('').toLowerCase();
                 const categoryItem = this.getCategoryItem(item.label);
@@ -35,9 +44,15 @@ class Basket extends Component {
                                 </div>
                             </div>
                         </Link>
+                        <div className="order-item-price-ed">
+                            Цена за ед: {priceEd}
+                        </div>
+                        <div className="order-item-counter">
+                            Кол-во: {item.amount}
+                        </div>
                         <div className="order-item-price">
                             <div className="order-item-price-block">
-                                {price}
+                                {priceSum}
                             </div>
                             <div
                                 className="del-item-btn"
@@ -98,6 +113,7 @@ class Basket extends Component {
 
     render() {
         const {basket} = this.props;
+        console.log('State', this.props.basket);
         return (
             <div className="basketBlock">
                 <div className="container">

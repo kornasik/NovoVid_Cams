@@ -53,8 +53,15 @@ class MakeOrder extends Component {
         )
     };
 
+    totalSum = () => {
+        let sum = 0;
+        this.props.basket.forEach((item)=>{
+            sum += item.price * item.amount;
+        });
+        return sum;
+    };
+
     render() {
-        const {totalSum} = this.props;
         return (
                 <div className="make-order">
                     <div className="make-order-block-up">
@@ -102,7 +109,7 @@ class MakeOrder extends Component {
                                 Итоговая стоимость:
                             </div>
                             <div className="total-sum-value">
-                                {totalSum} руб.
+                                {this.totalSum()} руб.
                             </div>
                         </div>
                         <div className="confirm-order">
@@ -116,7 +123,7 @@ class MakeOrder extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        totalSum: state.totalSum
+        basket: state.basket
     }
 };
 

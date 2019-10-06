@@ -39,6 +39,15 @@
     margin-top: 40px;
 }
 
+.order-item-price-ed{
+    display: flex;
+    margin-top: 40px;
+}
+
+.order-item-counter{
+    margin-top: 40px;
+}
+
 .make-order {
     display: flex;
     flex-direction: column;

@@ -45,17 +45,16 @@ form label {
 }
 
 .one-click {
-    padding: 5px;
+    padding: 25px;
     background-size: contain;
     background: #e83e38 url("../img/one_click.png") no-repeat center;
-    width: 40px;
     height: auto;
 }
 
 .add-basket-label{
     background-color: #2ee59d;
     font-weight: bold;
-    padding: 11px;
+    padding: 20px;
     margin-left: -25px;
     color: white;
 }
@@ -63,7 +62,7 @@ form label {
 .one-click-label{
     background-color: #e83e38;
     font-weight: bold;
-    padding: 11px;
+    padding: 20px;
     margin-left: -11px;
     color: white;
 }
@@ -86,16 +85,18 @@ form label {
 
 .counter-item_increase {
     border: 1px solid black;
+    text-align: center;
 }
 
 .counter-item_decrease {
     border: 1px solid black;
-    border-bottom: none;
+    text-align: center;
 }
 
 .counter-item_count {
     border-left: 1px solid black;
     border-right: 1px solid black;
+    text-align: center;
 }
 
 /*Popup*/

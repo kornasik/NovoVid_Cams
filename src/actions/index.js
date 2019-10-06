@@ -13,3 +13,7 @@ export const deleteItem = (payload) => {
 export const totalSumAction = (payload) => {
     return {type: "TOTAL_SUM", payload}
 };
+
+export const countBasketAction = (payload) => {
+    return {type: "COUNT_BASKET", payload}
+};

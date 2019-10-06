@@ -7,6 +7,7 @@ import mail from '../img/mail.png';
 import basket from '../img/basket.png';
 
 import './index.css';
+import SocialAndBasket from "./social-and-basket";
 
 class Information extends Component {
     info = () => {
@@ -48,7 +49,7 @@ class Information extends Component {
                 <div className="basket">
                     <Link to="/basket">
                         <div className="basket-count">
-                            {this.props.basket.length}
+                            {this.state.count}
                         </div>
                         <img className="basket-icon" src={basket}/>
                     </Link>
@@ -72,7 +73,7 @@ class Information extends Component {
         return (
             <Fragment>
                 {this.info()}
-                {this.rightBlock()}
+                <SocialAndBasket />
             </Fragment>
         )
     }
@@ -81,6 +82,7 @@ class Information extends Component {
 const mapStateToProps = (state) => {
     return {
         basket: state.basket
+
     }
 };
 

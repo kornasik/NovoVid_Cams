@@ -8,6 +8,7 @@ import AddBasketButton from '../elements/add-basket-button';
 import './index.css';
 import '../left-menu/index.css';
 import OneClick from "../elements/one-click";
+import CounterItem from "../elements/counter-item";
 
 
 export default class CatalogItem extends Component {
@@ -95,11 +96,13 @@ export default class CatalogItem extends Component {
                                     <OneClick
                                         label="Быстрый заказ"
                                     />
+                                    <CounterItem/>
                                     <AddBasketButton
                                         label="Купить"
                                         url={this.props}
                                     />
                                 </div>
+
                             </ul>
                         </div>
                         <div className="catalog-item-specification">

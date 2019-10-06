@@ -3,24 +3,43 @@ import {connect} from 'react-redux';
 import * as actions from '../actions';
 
 class AddBasketButton extends Component {
+    availabilityItemMethod = (array, currentItem) => {
+        let bool = false;
+        array.forEach((item) => {
+            if (item.label === currentItem.label) {
+                bool = true;
+            }
+        });
+        return bool;
+    };
 
-    generateBasketArray = (object) => {
-        const {basket} = this.props;
-        console.log(basket);
-        if (basket.length !== 0) {
-            let basketArray = basket;
-            console.log('basketArray', basketArray);
-            basketArray.forEach((item) => {
-                console.log(item);
-                if (object.label === item.label) {
+    updateBasket = (object) => {
+        const tempArrayBasket = this.props.basket;
+        if (tempArrayBasket.length !== 0) {
+            tempArrayBasket.every((item) => {
+                if (item.label === object.label) {
                     item.amount += object.amount;
-                } else {
-                    basketArray.push(object);
+                    return false;
                 }
+                return true;
             });
-            return basketArray;
+
+            const availabilityItem = this.availabilityItemMethod(tempArrayBasket, object);
+
+            if (!availabilityItem) {
+                tempArrayBasket.push(object);
+            }
+
+            let countBasket = 0;
+            tempArrayBasket.forEach((item) => {
+                countBasket += item.amount;
+            });
+
+            this.props.countBasketAction(countBasket);
+            this.props.addBasket(tempArrayBasket);
         } else {
-            return [object];
+            this.props.countBasketAction(1);
+            this.props.addBasket([object]);
         }
     };
 
@@ -29,15 +48,14 @@ class AddBasketButton extends Component {
         if (this.props.url) {
             const itemLabel = event.target.parentElement.parentElement.parentElement.parentElement.childNodes[0].textContent;
             const itemPrice = Number((event.target.parentElement.parentElement.querySelector('.catalog-item-price').textContent).split(' ')[1]);
-
+            const itemAmount = Number(event.target.parentElement.parentElement.querySelector('.counter-item_count').textContent);
             const newObj = {
                 label: itemLabel,
-                price: itemPrice
+                price: itemPrice,
+                amount: itemAmount
             };
-            const lcArray = [...this.props.basket, newObj];
-            localStorage.setItem('belvideo.by', JSON.stringify(lcArray));
-            this.props.addBasket(newObj);
-            this.totalSum(itemPrice);
+            this.updateBasket(newObj);
+            localStorage.setItem('belvideo.by', JSON.stringify([...this.props.basket]));
         } else {
             const itemLabel = event.target.parentElement.parentElement.childNodes[0].textContent;
             const itemPrice = Number((event.target.parentElement.childNodes[0].textContent).split(' ')[0]);
@@ -47,17 +65,9 @@ class AddBasketButton extends Component {
                 price: itemPrice,
                 amount: itemAmount
             };
-            const lcArray = [...this.props.basket, newObj];
-            localStorage.setItem('belvideo.by', JSON.stringify(lcArray));
-            this.props.addBasket(this.generateBasketArray(newObj));
-            this.totalSum(itemPrice);
+            this.updateBasket(newObj);
+            localStorage.setItem('belvideo.by', JSON.stringify([...this.props.basket]));
         }
-    };
-
-    totalSum = (priceItem) => {
-        let sum = this.props.totalSum;
-        sum += priceItem;
-        this.props.totalSumAction(sum);
     };
 
     render() {
@@ -81,8 +91,7 @@ class AddBasketButton extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        basket: state.basket,
-        totalSum: state.totalSum
+        basket: state.basket
     }
 };
 
