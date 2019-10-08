@@ -11,7 +11,6 @@ import './index.css';
 class Basket extends Component {
     renderOrderList = () => {
         const {basket} = this.props;
-        console.log(basket);
         if (basket.length !== 0) {
             return basket.map((item) => {
                 const id = item.label.split(' ').join('').toLowerCase();
@@ -113,7 +112,6 @@ class Basket extends Component {
 
     render() {
         const {basket} = this.props;
-        console.log('State', this.props.basket);
         return (
             <div className="basketBlock">
                 <div className="container">
@@ -137,7 +135,9 @@ class Basket extends Component {
                     {this.renderOrderList()}
                     {
                         basket.length !== 0 ?
-                            <MakeOrder />
+                            <MakeOrder
+                                itemBaskket={this.props.basket}
+                            />
                             : null
                     }
                 </div>

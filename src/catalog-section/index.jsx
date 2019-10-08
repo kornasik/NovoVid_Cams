@@ -19,35 +19,43 @@ export default class CatalogSection extends Component {
         })
     };
 
+    sortDown = (itemBlockA, itemBlockB) => {
+        if (itemBlockA.price < itemBlockB.price) return 1;
+    };
+
+    newArr = catalogSections.sort(this.sortDown);
+
     catalogItem = () => {
-        return catalogSections.map((item) => {
+        return this.newArr.map((item) => {
             if (item.categoryName === this.props.match.params.id) {
                 const splitItemLabel = item.label.split(' ').join('').toLowerCase();
                 let url = `/catalog/${this.props.match.params.id}/${splitItemLabel}`;
                 return (
-                    <Link to={url}>
-                        <div className="catalog-section-item">
-                            <div className="catalog-section-item-title">{item.label}</div>
-                            <div className="catalog-section-item-img"><img src={item.img}/></div>
-                            <ul className="catalog-section-item-description">
-                                <li>{item.description[0]}</li>
-                                <li>{item.description[1]}</li>
-                                <li>{item.description[2]}</li>
-                                <li>{item.description[3]}</li>
-                                <li style={{marginBottom: '15px'}}>{item.description[4]}</li>
-                            </ul>
-                            <div className="info-buy">
-                                <PriceSection
-                                    price={item.price}
-                                />
-                                <CounterItem/>
-                                <OneClick
-                                    itemLabel={item.label}
-                                />
-                                <AddBasketButton/>
+                    <div className="catalog-section-item-block">
+                        <Link to={url}>
+                            <div className="catalog-section-item">
+                                <div className="catalog-section-item-title">{item.label}</div>
+                                <div className="catalog-section-item-img"><img src={item.img}/></div>
+                                <ul className="catalog-section-item-description">
+                                    <li>{item.description[0]}</li>
+                                    <li>{item.description[1]}</li>
+                                    <li>{item.description[2]}</li>
+                                    <li>{item.description[3]}</li>
+                                    <li style={{marginBottom: '15px'}}>{item.description[4]}</li>
+                                </ul>
                             </div>
+                        </Link>
+                        <div className="info-buy catalog-section-info-buy">
+                            <PriceSection
+                                price={item.price}
+                            />
+                            <CounterItem />
+                            <OneClick
+                                itemLabel={item.label}
+                            />
+                            <AddBasketButton/>
                         </div>
-                    </Link>
+                    </div>
                 );
             }
         })

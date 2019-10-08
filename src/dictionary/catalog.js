@@ -141,7 +141,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-11L-EH10F36IR',
-             price: '1570',
+            price: '1570',
             img: 'https://proto-x.net/upload/iblock/174/11l_with-flag.png',
             description:
                 [
@@ -180,6 +180,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-12L-EH10V212IR',
+            price: '1591',
             img: 'https://proto-x.net/upload/iblock/ebd/12l_with-flag.png',
             description:
                 [
@@ -339,7 +340,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4V-PE20M212IR',
-        price: '5433',
+            price: '5433',
             img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
             description:
                 [
@@ -361,6 +362,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-11B-PE20F36IR',
+            price: '3927',
             img: 'https://proto-x.net/upload/iblock/479/lx03v212ir.png',
             description:
                 [
@@ -630,7 +632,8 @@ export const catalogSections = [
             specification: ["2.0 Mpix (1920×1080 px)", "0,01 Лк", "2.0Mp 1/3 Panasonic High Speed CMOS, DSP Proto-X PX-E0916", "PAL/NTSC", "12 шт.", "30 м", "Механический ИК фильтр (ICR)", "Моторизированный 2,8 - 12 мм", "1.0Vp-p Composite Video, 75ohm", "Auto/Manual", "Уровни 0-10, Вручную", "BLC/HLC", "×2 - ×30", "3D-DNR", "High Speed WDR", "Авто, Вручную (1/25600-×30), Flicker", "Цвет / ЧБ / Авто / Внеш. (фотоэлемент ИК подсветки)", "DC12V", "130 мА (max 430 мА с ИК)", "-35...+50°C", "IP66", "256x78x87 мм", "Камера, паспорт, 3 шурупа, 3 пластиковых дюбеля, штекер питания с креплением под винт"]
         }, {
             categoryName: 'ahd-cams',
-            label: 'Proto AHD-4W-SN20V212IR',
+            label: 'Proto AHD-4W-SF20V212IR',
+            price: '4347',
             img: 'https://proto-x.net/upload/iblock/b37/z2w_with-flag.png',
             description:
                 [
@@ -719,6 +722,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-S20Z22IR',
+            price: '35626',
             img: 'https://proto-x.net/upload/iblock/897/ahd_a13z17ir.png',
             description:
                 [
@@ -966,6 +970,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ip-cams',
             label: 'Proto IP-Z10D-OH10F36',
+            price: '2930',
             img: 'https://proto-x.net/upload/iblock/99d/z10d-with-flag.png',
             nameSpecification: ["Разрешение матрицы", "Чувствительность", "Матрица, процессор", "Фильтр", "Объектив", "Диафрагма", "Детектор движения", "Поддержка", "Сетевой интерфейс", "Сетевые протоколы", "Управление", "Мобильный клиент", "Питание", "Потребление", "Рабочая температура", "Габаритные размеры", "Поток"],
             description: ["Разрешение 1.0 Mp (1280x720px)", "Чувствительность: цвет 0,05 Лк, ч/б 0 Лк (IR on)", "Фиксированный объектив 3,6 м   (2,8 мм / 6 мм / 8 мм - опция)", "Механический ИК фильтр (ICR)", "Диапазон рабочих температур: -10...+50°С", "Габаритные размеры: D126x110 мм", "Питание: 12 В / 140 мА", "Поддержка РоЕ - опция", "Двойной поток H.264 (25 fps)", "Поддержка ONVIF", "Поддержка P2P облачного сервиса", "Поддержка Audio (RCA), кодек G.711A", "Детектор движения, тревожный детектор", "Встроенный ActiveX WEB клиент", "Полнофункциональный мобильный клиент (для платформ iOS, Android)", "Ethernet 10/100M (RJ45), поддержка   RTSP/DHCP/DDNS/UPNP/SMTP/FTP"],
@@ -973,6 +978,7 @@ export const catalogSections = [
         },
         {
             label: "Proto IP-Z10D-OH10V212",
+            price: '3831',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1034,6 +1040,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-OH10F36IR",
+            price: '3140',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1101,6 +1108,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-OH10V212IR",
+            price: '3934',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1168,6 +1176,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-HD13F36",
+            price: '3044',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1226,6 +1235,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-HD20V212",
+            price: '6480',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1289,6 +1299,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-HD20V212IR",
+            price: '7068',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1358,6 +1369,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-SH20F36",
+            price: '6409',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1415,6 +1427,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-SH20V212",
+            price: '6707',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1472,6 +1485,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-SH20V212IR",
+            price: '6675',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1535,6 +1549,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-AT30F36",
+            price: '7351',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1597,6 +1612,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-AT30V212",
+            price: '7658',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1658,6 +1674,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-AT30F36IR",
+            price: '7658',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1727,6 +1744,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-AT30V212IR",
+            price: '8130',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1794,6 +1812,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-OH40F36IR",
+            price: '8639',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1869,6 +1888,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10D-SH50F28IR",
+            price: '15904',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -1942,6 +1962,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z3V-OH10F36IR",
+            price: '3633',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2098,6 +2119,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4V-OH10F36IR",
+            price: '3534',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2171,6 +2193,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4V-OH10V212IR",
+            price: '4162',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2241,6 +2264,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-OH10F36IR",
+            price: '3731',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2314,6 +2338,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-OH10V212IR",
+            price: '4516',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2460,6 +2485,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z3V-SH20F36IR",
+            price: '6582',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2529,6 +2555,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4V-SH20F36IR",
+            price: '5494',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2600,6 +2627,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4V-SH20V212IR",
+            price: '5968',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2670,6 +2698,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-SH20F36IR",
+            price: '5204',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2742,6 +2771,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-SH20V212IR",
+            price: '7177',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2816,6 +2846,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-SH20M212IR",
+            price: '8473',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2889,6 +2920,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-AT30F36IR",
+            price: '8738',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -2967,6 +2999,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-AT30V212IR",
+            price: '9446',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3044,6 +3077,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-OH40F36IR",
+            price: '9149',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3126,6 +3160,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-OH40V212IR",
+            price: '10092',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3208,6 +3243,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5V-OH40M212IR",
+            price: '11973',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3290,6 +3326,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5W-OH10F36IR",
+            price: '3731',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3359,6 +3396,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-OH10F36IR",
+            price: '3633',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3429,6 +3467,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z2W-OH10F36IR",
+            price: '4712',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3501,6 +3540,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-OH10V212IR",
+            price: '4140',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3573,6 +3613,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4W-OH10V212IR",
+            price: '6087',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3645,6 +3686,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z5W-SH20F36IR",
+            price: '4909',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3775,6 +3817,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z2W-SH20F36IR",
+            price: '6872',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3843,6 +3886,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-SH20V212IR",
+            price: '5744',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3910,6 +3954,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z4W-SH20V212IR",
+            price: '8246',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -3978,6 +4023,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z7W-SH20M212IR",
+            price: '10268',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4058,6 +4104,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-SH20M212IR",
+            price: '9916',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4290,6 +4337,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-OH40F36IR",
+            price: '10388',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4368,6 +4416,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-OH40M212IR",
+            price: '9079',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4444,6 +4493,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z7W-OH40M212IR",
+            price: '11999',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4520,6 +4570,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-OH40M212IR",
+            price: '11999',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4596,6 +4647,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-SH50F28IR",
+            price: '16634',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4752,6 +4804,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-SH50F28IR",
+            price: '18849',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4830,6 +4883,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-SH50M212IR",
+            price: '17938',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4908,6 +4962,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-SH50M212IR",
+            price: '18288',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4990,6 +5045,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-AT30F36IR",
+            price: '8836',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5063,6 +5119,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z10W-AT30V212IR",
+            price: '9621',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5136,6 +5193,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-TW20V212IR (AI)",
+            price: '9720',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5350,6 +5408,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-H1W20F36IR",
+            price: '4712',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5416,6 +5475,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-H2W20F36IR",
+            price: '5497',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5485,6 +5545,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-C10",
+            price: '4909',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5626,6 +5687,7 @@ export const catalogSections = [
         , {
             label: "Proto-NPC (корпус 2)",
             categoryName: "ip-cams",
+            price: '9621',
             nameSpecification: [
                 "Центральный процессор",
                 "Операционная система",
@@ -6058,6 +6120,7 @@ export const catalogSections = [
         },
         {
             label: "Страж ПВР-05",
+            price: '28875',
             categoryName: "mobile-videoreg",
             nameSpecification: [
                 "Матрица",
@@ -6117,9 +6180,69 @@ export const catalogSections = [
                 "130 г (без крепления)"
             ],
             img: 'https://proto-x.net/upload/iblock/27f/1.jpg'
+        }, {
+            label: "Страж ПВР-06",
+            price: '29700',
+            categoryName: "mobile-videoreg",
+            nameSpecification: [
+                "Матрица",
+                "Дальность ИК",
+                "Угол обзора видеокамеры",
+                "Возможность выбора режимов видеозаписи",
+                "Формат видео",
+                "Формат фото",
+                "Разрешение",
+                "Возможность сегментирования видеозаписи в диапазоне",
+                "Постоянное запоминающее устройство",
+                "Компас / GPS (опция)",
+                "Время работы от аккумулятора",
+                "Масса изделия",
+                "Дисплей",
+                "Наличие датчика движения",
+                "Наличие ИК-фильтра",
+                "Защита информации"
+            ],
+            description: [
+                "CMOS сенсор OV4689 / Чип ambarella A7LA50",
+                "Запись 2560*1080@30fps, 2304*1296 30fps / 2305*1296 15fps / 1920*1080 30fps / 1920*1080 30fps / 1280*720  60fps / 1280*720  30fps / 848*480  60fps  ",
+                "Дальность ИК  5-10 м",
+                "Угол обзора 170° (по горизонтали)",
+                "Звук Моно, аналоговый",
+                "Формат видео H. 264 , AVi/ MPEG4(МР4)",
+                "Разрешение фото 7552×4248 (JPG)",
+                "Встроенная память 64 Гб",
+                "Встроенный аккумулятор 2850/4000 мА/ч",
+                "Рабочая температура: -25°...+60°С",
+                "Габаритные размеры  79х58х29 / 79х58х31 мм",
+                "Поддержка записи в одно касание",
+                "Поддержка слайд-шоу",
+                "Визуальные индикаторы уровня заряда батареи",
+                "Запись поверх видео информации о местоположении, даты и времени"
+            ],
+            specification: [
+                "CMOS сенсор OV4689 Чип ambarella A7LA50",
+                "5-10 метров",
+                "170° по горизонтали",
+                "2560*1080@30fps | 2304*1296 30fps | 2305*1296 15fps | 1920*1080 30fps | 1920*1080 30fps | 1280*720 60fps | 1280*720 30fps | 848*480 60fps",
+                "H. 264 , AVi/ MPEG4 (МР4)",
+                "JPEG",
+                "32Мп (7552×4248) (30м/23М/20м/18.5M16M/4М)",
+                "минут / 10 минут / 15 минут / 30 минут / 45 минут",
+                "карта памяти 64Гб",
+                "да",
+                "до 7/ до 10 часов (исп.1,3 / исп.2)",
+                "128 гр (исп.1) / 145 гр (исп.2) / 140 гр (исп.3)",
+                "2 TFT- ЖК-дисплей HD",
+                "WAV",
+                "Да",
+                "Да",
+                "Поддержка защиты паролем"
+            ],
+            img: 'https://proto-x.net/upload/iblock/c82/3-_-_.png'
         },
         {
             label: "Страж-Терминал",
+            price: '554400',
             categoryName: "mobile-videoreg",
             nameSpecification: [
                 "Материал корпуса",
@@ -6169,6 +6292,7 @@ export const catalogSections = [
         },
         {
             label: "Аккумуляторная батарея для СТРАЖ ПВР",
+            price: '2487',
             categoryName: "mobile-videoreg",
             nameSpecification: [
                 "Интерфейсы",
@@ -6194,6 +6318,7 @@ export const catalogSections = [
         },
         {
             label: "Proto AHD-1B-EH10F36IR",
+            price: '1866',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -6343,6 +6468,7 @@ export const catalogSections = [
         },
         {
             label: "PTX-ВИЗИР2-E4H1 (SD)",
+            price: '23038',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Программное обеспечение",
@@ -6420,6 +6546,7 @@ export const catalogSections = [
         },
         {
             label: "PTX-ВИЗИР2-4H1(SD)",
+            price: '57149',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Программное обеспечение",
@@ -6484,6 +6611,7 @@ export const catalogSections = [
         },
         {
             label: "PTX-ВИЗИР2-4H1(HDD)",
+            price: '62592',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Программное обеспечение",
@@ -6545,6 +6673,7 @@ export const catalogSections = [
         },
         {
             label: "PTX-ВИЗИР2-4N(HDD)",
+            price: '59692',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Программное обеспечение",
@@ -6614,6 +6743,7 @@ export const catalogSections = [
         },
         {
             label: "PTX-ВИЗИР2-8H4(HDD)",
+            price: '87085',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Программное обеспечение",
@@ -6680,7 +6810,8 @@ export const catalogSections = [
             img: 'https://proto-x.net/upload/iblock/a43/5105f7d11e04946ff80743922ff487015919218cd91af55a28_pimgpsh_fullsize_distr.png'
         },
         {
-            label: "АВР-02",
+            label: "PTX-АВР-02",
+            price: '40840',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Тип объектива",

@@ -4,8 +4,15 @@ import close from '../img/del-item.png'
 import './index.css';
 
 export default class OneClick extends Component {
+    state = {
+      labelClick: ''
+    };
+
     viewPopUp = (event) => {
         event.preventDefault();
+        this.setState({
+            labelClick: String(event.target.parentElement.parentElement.childNodes[0].childNodes[0].childNodes[0].textContent)
+        });
         document.querySelector('.pop-up-container').style.display = "block";
         document.querySelector('.pop-up-container').style.position = "absolute";
         document.querySelector('.pop-up-container').style.left = "0";
@@ -18,18 +25,9 @@ export default class OneClick extends Component {
 
     };
 
-    popUp = (event) => {
-        event.preventDefault();
-    };
-
-    closePopUp = (event) => {
-        event.preventDefault();
+    closePopUp = () => {
         document.querySelector('.pop-up-container').style.display = "none";
         document.querySelector('.pop-up').style.display = "none";
-    };
-
-    donTouch = (event) => {
-        event.preventDefault();
     };
 
     render() {
@@ -42,32 +40,31 @@ export default class OneClick extends Component {
                 {this.props.label
                     ? <div
                         className="one-click-label"
-                        onClick={this.viewPopUp
-                        }>
+                        onClick={this.viewPopUp}
+                    >
                         {this.props.label}
                     </div>
                     : null}
                 <div
                     className="pop-up-container"
-                    onClick={this.popUp}
                 />
                 <div
                     className="pop-up"
-                    onClick={this.donTouch}
                 >
-                    <form action="/" method="POST">
+                    <form action="/one.php" method="POST">
                         <img
                             src={close}
                             onClick={this.closePopUp}
                         />
                         <div className="pop-up_details">
                             <span className="pop-up_title">Для быстрого заказа введите Ваш номер телефона.</span>
-                            <input className="pop-up_tel" type="tel" placeholder="+375291661221"/>
+                            <input className="pop-up_tel" name="phone" placeholder="+375291661221" required/>
                             <div className="pop-up-item-number-wrapper">
                                 <label htmlFor="pop-up_number" className="pop-up_number-label">
                                     Количество:
                                 </label>
-                                <input className="pop-up_number" id="pop-up_number" type="number"/>
+                                <input className="pop-up_number" id="pop-up_number" name="amount" type="number"/>
+                                <input style={{display: 'none'}} type="text" name="label" value={this.state.labelClick}/>
                             </div>
                             <button type="submit">Заказать</button>
                         </div>

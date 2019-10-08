@@ -100,7 +100,7 @@
 .make-order__block-right {
     position: relative;
     display: flex;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
     font-weight: bold;
     font-size: 18px;
@@ -115,6 +115,7 @@
 }
 
 .make-order__delivery-method label{
+    flex-direction: row;
     padding: 10px;
     border: 1px solid #e0e1e7;
     border-radius: 6px;

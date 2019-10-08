@@ -47,7 +47,7 @@ class MakeOrder extends Component {
             <div className="courier-delivery">
                 <label>
                     Адрес доставки:
-                    <input type="text" placeholder=" г.Минск, улица Киселева 55"/>
+                    <input type="text" name="courier" placeholder=" г.Минск, улица Киселева 55"/>
                 </label>
             </div>
         )
@@ -55,14 +55,17 @@ class MakeOrder extends Component {
 
     totalSum = () => {
         let sum = 0;
-        this.props.basket.forEach((item)=>{
-            sum += item.price * item.amount;
+        this.props.basket.forEach((item) => {
+            if(!isNaN(item.price)){
+                sum += item.price * item.amount;
+            }
         });
         return sum;
     };
 
     render() {
         return (
+            <form action="/mail.php" method="POST">
                 <div className="make-order">
                     <div className="make-order-block-up">
                         <div className="make-order__block-left">
@@ -73,12 +76,27 @@ class MakeOrder extends Component {
                             </label>
                             <label>
                                 Телефон:
-                                <input type="tel" name="tel"/>
+                                <input type="tel" name="tel" required/>
                             </label>
                             <label>
                                 Имя:
                                 <input type="text" name="name"/>
                             </label>
+
+                            <input
+                                style={{display: 'none'}}
+                                type="text"
+                                name="basket"
+                                value={JSON.stringify(this.props.basket)}
+                            />
+
+                            <input
+                                style={{display: 'none'}}
+                                type="text"
+                                name="basket-price"
+                                value={String(this.totalSum())}
+                            />
+
                         </div>
                         <div className="make-order__block-right">
                             Доставка:
@@ -87,18 +105,31 @@ class MakeOrder extends Component {
                                 onChange={this.deliveryChange}
                             >
                                 <label>
-                                    <input name="delivery" type="radio" id="pickup" defaultChecked/>
+                                    <input
+                                        name="delivery"
+                                        type="radio"
+                                        id="pickup"
+                                        defaultChecked
+                                    />
                                     Самовывоз бесплатно
                                 </label>
 
                                 <label>
-                                    <input name="delivery" type="radio" id="courier"/>
+                                    <input
+                                        name="delivery"
+                                        type="radio"
+                                        id="courier"
+                                    />
                                     Курьером от 5 руб.
                                 </label>
                             </div>
                             {this.state.delivery ? this.courierDelivery() : this.pickUpDelivery()}
                             <div className="promo-code">
-                                <input type="text" placeholder="Промо-код"/>
+                                <input
+                                    type="text"
+                                    placeholder="Промо-код"
+                                    name="promo-code"
+                                />
                                 <button>Применить</button>
                             </div>
                         </div>
@@ -117,6 +148,7 @@ class MakeOrder extends Component {
                         </div>
                     </div>
                 </div>
+            </form>
         )
     }
 }

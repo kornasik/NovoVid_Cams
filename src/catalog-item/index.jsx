@@ -66,6 +66,7 @@ export default class CatalogItem extends Component {
     render() {
         return (
             <div className="container">
+                <div style={{marginTop: '33px'}} />
                 <div className="catalog-item-block">
                     <Link className="btn-home" to="/" style={{position: 'absolute'}}>
                         Главная

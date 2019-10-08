@@ -441,11 +441,11 @@ ul li a:hover::before {
 
     .one-click-label {
         margin-left: -40px !important;
-        padding: 39px !important;
+        padding: 35px !important;
     }
 
     .add-basket-label {
-        padding: 33px !important;
+        padding: 35px !important;
         margin-left: -60px !important;
     }
 

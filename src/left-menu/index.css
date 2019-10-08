@@ -9,3 +9,8 @@
     color: #846c84;
     font-size: 14px;
 }
+
+.catalog-section-block-left-item-active{
+    color: red;
+    font-weight: bold;
+}

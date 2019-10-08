@@ -57,7 +57,7 @@ class AddBasketButton extends Component {
             this.updateBasket(newObj);
             localStorage.setItem('belvideo.by', JSON.stringify([...this.props.basket]));
         } else {
-            const itemLabel = event.target.parentElement.parentElement.childNodes[0].textContent;
+            const itemLabel = event.target.parentElement.parentElement.childNodes[0].childNodes[0].childNodes[0].textContent;
             const itemPrice = Number((event.target.parentElement.childNodes[0].textContent).split(' ')[0]);
             const itemAmount = Number(event.target.parentElement.childNodes[1].childNodes[1].textContent);
             const newObj = {

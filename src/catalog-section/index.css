@@ -6,6 +6,7 @@
     text-decoration: none;
     color: black;
     height: fit-content;
+    border-bottom: none;
 }
 
 .catalog-section-block-right {
@@ -16,7 +17,7 @@
 }
 
 .catalog-section-block-left{
-    width: 145px;
+    width: 180px;
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-left: 1px solid black;
@@ -75,6 +76,11 @@
     margin-top: 10px;
 }
 
+.catalog-section-item-block{
+    display: flex;
+    flex-direction: column;
+}
+
 .price-section{
     background-color: #3D3D3D;
     color: white;
@@ -85,6 +91,7 @@
 .price-section span{
     display: block;
     margin-top: 15px;
+    text-align: center;
 }
 
 .price {
@@ -97,5 +104,10 @@
 
 .catalog-item-counter {
     display: flex;
+}
+
+.catalog-section-info-buy{
+    border: 1px solid black;
+    border-top: none;
 }
 

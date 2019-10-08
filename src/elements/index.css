@@ -84,11 +84,13 @@ form label {
 }
 
 .counter-item_increase {
+    cursor: pointer;
     border: 1px solid black;
     text-align: center;
 }
 
 .counter-item_decrease {
+    cursor: pointer;
     border: 1px solid black;
     text-align: center;
 }
