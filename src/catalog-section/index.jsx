@@ -20,11 +20,15 @@ export default class CatalogSection extends Component {
     };
 
     sortDown = (itemBlockA, itemBlockB) => {
-        if (itemBlockA.price < itemBlockB.price) return 1;
+        if(itemBlockA.price && itemBlockB.price){
+            return itemBlockA.price - itemBlockB.price
+        }
     };
 
-    newArr = catalogSections.sort(this.sortDown);
 
+
+    debugger;
+    newArr = catalogSections.sort(this.sortDown);
     catalogItem = () => {
         return this.newArr.map((item) => {
             if (item.categoryName === this.props.match.params.id) {
@@ -62,6 +66,7 @@ export default class CatalogSection extends Component {
     };
 
     render() {
+        console.log(this.newArr);
         return (
             <div className="container">
                 <div className="catalog-section-block-title">

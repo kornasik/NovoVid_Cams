@@ -199,6 +199,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-12L-SN13V212IR',
+            price: '2954',
             img: 'https://proto-x.net/upload/iblock/ebd/12l_with-flag.png',
             description:
                 [
@@ -275,28 +276,7 @@ export const catalogSections = [
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-4V-PE20F36IR',
-            price: '4319',
-            img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
-            description:
-                [
-                    'Режим работы TVI / CVI / AHD 2Mp / CVBS 1000ТВЛ',
-                    'Разрешение: 1920х1080px',
-                    'Чувствительность: 0,01Лк',
-                    'Фиксированный объектив 3,6 мм (2,8 мм / 6 мм / 8 мм - опция)',
-                    'Механический ИК фильтр (ICR)',
-                    '15 встроенных ИК диодов',
-                    'Дальность подсветки: до 15 м',
-                    'Защита от влаги и пыли: IP54',
-                    'Класс вандалоустойчивости: IK10',
-                    'Диапазон рабочих температур: -10...+50°С',
-                    'Габаритные размеры: D105×81 мм',
-                    'Питание: 12 В / 130 мА (max 240 мА с ИК)'
-                ],
-            nameSpecification: ["Разрешение матрицы", "Чувствительность", "Матрица, процессор", "Сигнал", "ИК диоды", "Дальность ИК", "Фильтр", "Объектив", "Разрешение объектива", "Диафрагма", "Видео выход", "Баланс белого", "Автоматическая регулировка усиления (AGC)", "Компенсация засветки", "Режим накопления заряда (DSS, Sense-Up)", "Фильтр шумоподавления (DNR)", "Динамический цветовой диапазон (WDR)", "Электронный затвор", "День/ночь", "Питание", "Потребление", "Рабочая температура", "Класс вандалоустойчивости", "Степень защиты", "Габаритные размеры", "Комплектация"],
-            specification: ["2.0 Mpix (1920×1080 px)", "0,01 Лк", "2.0Mp 1/3 Panasonic High Speed CMOS, DSP Proto-X PX-E0916", "PAL/NTSC", "15 шт.", "15 м", "Механический ИК фильтр (ICR)", "Фиксированный 2,8 мм / 3,6 мм / 6 мм / 8 мм", "3Mpx", "F=2.0", "1.0Vp-p Composite Video, 75ohm", "Auto/Manual", "Уровни 0-10, Вручную", "BLC/HLC", "×2 - ×30", "3D-DNR", "High Speed WDR", "Авто, Вручную (1/25600-×30), Flicker", "Цвет / ЧБ / Авто / Внеш. (фотоэлемент ИК подсветки)", "DC12V", "130 мА (max 240 мА с ИК)", "-10...+50°C", "IK10", "IP54", "D105x81 мм", "Камера, паспорт, 3 шурупа, 3 пластиковых дюбеля, штекер питания с креплением под винт"]
-        }, {
-            categoryName: 'ahd-cams',
-            label: 'Proto AHD-4V-PE20F36IR',
+            price: '5909',
             img: 'https://proto-x.net/upload/iblock/c15/4v-with-flag.png',
             description:
                 [
@@ -381,41 +361,6 @@ export const catalogSections = [
                 ],
             nameSpecification: ["Разрешение матрицы", "Чувствительность", "Матрица, процессор", "Разрешение", "ИК диоды", "Дальность ИК", "Фильтр", "Объектив", "Баланс белого", "Компенсация засветки", "Режим накопления заряда (DSS, Sense-Up)", "Фильтр шумоподавления (DNR)", "Динамический цветовой диапазон (WDR)", "День/ночь", "Adaptive tone reproduction", "Питание", "Потребление", "Рабочая температура", "Класс вандалоустойчивости", "Степень защиты", "Габаритные размеры"],
             specification: ["2.0 Mpix (1920×1080 px)", "0,01Лк", "1/3 Panasonic CMOS MN34227PL; DSP Proto-X PX-E0916", "800 TVL", "24", "до 20 м", "Механический ИК фильтр (ICR)", "Фиксированный 3,6 мм", "ATW/AWB", "BLC/HLC", "×2 - ×30", "3D-DNR", "High Speed WDR", "Auto", "Auto/on/off", "DC12V", "max 300 мА с ИК", "-30С ~ +50С", "IK10", "IP67", "94x69 mm"]
-        }, {
-            categoryName: 'ahd-cams',
-            label: 'Proto AHD-5B-EH10F36IR',
-            img: 'https://proto-x.net/upload/iblock/949/2.png',
-            description:
-                [
-                    'Режим работы: AHD-M 1Mp/CVBS 1000ТВЛ/CVI 1Mp/TVI 1Mp',
-                    'Матрица и процессор - 1/4" H42 CMOS, HDI8901',
-                    'Фиксированный объектив 3.6 мм',
-                    'ИК фильтр: Механический (ICR)',
-                    'ИК диоды: Ø5 x 12 шт',
-                    'Дальность ИК подсветки: до 15 м',
-                    'Диапазон рабочих температур: -30°С ~ +50°С',
-                    'Класс вандалоустойчивости: IK10',
-                    'Защита от влаги и пыли: IP64',
-                    'Габаритные размеры: 90×77×62 мм',
-                    'Питание: DC12 В / 130 мА (max 250 мА)'
-                ],
-            nameSpecification: ["Матрица, процессор", "ИК диоды", "Дальность ИК", "Фильтр", "Объектив", "Разрешение объектива", "Питание", "Потребление", "Рабочая температура", "Класс вандалоустойчивости", "Степень защиты", "Габаритные размеры", "Комплектация", "Разрешение видеокамеры"],
-            specification: ["1/4 H42 CMOS, HDI8901", "Ø5 x 12 шт", "до 15 метров", "Механический ИК фильтр (ICR)", "Фиксированный 3,6 мм", "1Mpx", "DC12V", "130 мА (max 250 мА с ИК)", "-30С ~ +50С", "IK10", "IP64", "90×77×62 мм", "крепежный комплект", "AHD-M 1Mp /CVBS 1000ТВЛ/CVI 1Mp / TVI 1Mp"]
-        }, {
-            categoryName: 'ahd-cams',
-            label: 'Proto AHD-1B-SF20F36IR',
-            img: 'https://proto-x.net/upload/iblock/b4a/1B.png',
-            description:
-                [
-                    'разрешение: 2Mpix',
-                    'матрица: CMOS 1/2.9"SONY IX323/DSP FH8536H',
-                    'ИК диоды Ф5 x 12 шт',
-                    'рабочая температура: -30...+50°С',
-                    'степень защиты: IP64',
-                    'класс вандалоустойчивости: IK10'
-                ],
-            nameSpecification: ["Матрица, процессор", "Сигнал", "ИК диоды", "Дальность ИК", "Объектив", "Отношение сигнал-шум", "Система сканирования", "Фильтр шумоподавления (DNR)", "Динамический цветовой диапазон (WDR)", "День/ночь", "Рабочая температура", "Класс вандалоустойчивости", "Степень защиты", "Габаритные размеры", "Чувствительность", "Разрешение"],
-            specification: ["2.0Mp CMOS 1/2.9 SONY IMX323/DSP FH8536H", "PAL/NTSC", "Ф5 x 12 шт", "15 м", "Фиксированный 3,6 мм", "более 48dB (AGC выкл)", "Прогрессивная", "H-DNR", "Auto", "Цвет / ЧБ / Авто / Внеш. (фотоэлемент ИК подсветки)", "-30С ~ +50С", "IK10", "IP64", "D70×62 мм", "0.01 Лк; Ч/б: 0 Лк (ИК Вкл)", "1920х1080, 1080p"]
         }, {
             categoryName: 'ahd-cams',
             label: 'Proto AHD-3W-EH10V212IR',
@@ -3752,6 +3697,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-SH20F36IR",
+            price: '7733',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4185,6 +4131,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z8W-OH40F40IR",
+            price: '10164',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4261,6 +4208,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z7W-OH40F40IR",
+            price: '11000',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -4726,6 +4674,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto IP-Z7W-SH50F40IR",
+            price: '20000',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5602,6 +5551,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto-NPC (корпус 1)",
+            price: '9163',
             categoryName: "ip-cams",
             nameSpecification: [
                 "Центральный процессор",
@@ -5771,7 +5721,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto-X Combo-AHD 4W",
-            price: '20617',
+            price: '27000',
             categoryName: "cctv-kits",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -5903,6 +5853,7 @@ export const catalogSections = [
         }
         , {
             label: "Proto-X Combo-IP 4W",
+            price: '24024',
             categoryName: "cctv-kits",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -6009,6 +5960,7 @@ export const catalogSections = [
         },
         {
             label: "Proto-X Combo 4W",
+            price: '20000',
             categoryName: "cctv-kits",
             nameSpecification: [
                 "Разрешение матрицы",
@@ -6389,6 +6341,7 @@ export const catalogSections = [
         },
         {
             label: "Proto AHD-2Q-EH10F36IR",
+            price: '2000',
             categoryName: "transport-solutions",
             nameSpecification: [
                 "Разрешение матрицы",
